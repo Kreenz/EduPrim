@@ -1,0 +1,136 @@
+/* Ya estan bien los links */
+
+#body > div:nth-child(1){
+    padding: 15px;
+}
+
+#body > div:nth-child(2){
+    padding: 15px;
+}
+
+#act-list{
+    background: #57afc1;
+    min-height: 50vh;
+    max-height: 28vw;
+    width: 30vw;
+    overflow-y: auto;
+    /* min-width: calc(320px + 1vh); */
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.search-bar{
+    background-image: url('?type=res&file=search_bar_first.png&dir=imgs/');
+    height: 23vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 26vw !important;
+}
+
+.icon-search{
+    background-image: url('?type=res&file=search_icon.png&dir=imgs/');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95% auto;
+    width: 5vw;
+    height: 10vh;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
+    padding: 1px;
+}
+
+.icon-search:hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.search-bar > i{
+    margin-left: 10px;
+}
+
+.search-bar > input{
+    height: 4vh;
+    width: 18vw;
+    border-style: dashed;
+    margin-left: 5px;
+    font-style: "YuseiMagic";
+}
+
+#btn-responder-seleccion{
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+#btn-responder-seleccion:hover{
+    color:#66ff99;
+}
+#btn-resultados{
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#btn-resultados:hover{
+    color:#66ff99;
+}
+
+.board-preview{
+    height: 80%;
+    width: 100%;
+    background-color: #57afc1;;
+    border: 1px solid black;
+}
+
+.board-preview > div:nth-child(2){
+    background-color: #666666;
+    height: 50px;
+}
+
+.board-preview > div:nth-child(2) > span{
+    margin-left: 15px;
+}
+
+.board-preview > div:nth-child(2) > div{
+    margin-right: 15px;
+}
+
+#preview-target {
+    min-height: 93.7%;
+    max-height: 93.7%;
+}
+
+ol{
+    margin-left: 10px;
+}
+
+.item-activity{
+    height: 8vh;
+    width: 23.5vw;
+}
+
+.submitCodigo{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 6vw !important;
+    height: 5.3vw !important;
+}
+
+.resContainer{
+    margin-top: 1vw;
+    width: 5vw;
+    height: 7vw;
+}
+
+.overflowbro{
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.green{
+    background-color: #66ff99;
+}
+
+.red{
+    background-color: #f46465;
+}

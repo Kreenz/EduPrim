@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Error</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-error">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <div id="logOut" class="logOut">
+        <form method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="logOut">CERRAR SESSIÓN</div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+    <div id="popUp"> 
+        <div class="flex-column center flex-start">
+            <div class="mark fW flex-row flex-end">
+                <i id="closePopUp" class="fas fa-window-close">
+                    <div></div>
+                </i>
+            </div>
+            <div id="popUpContent" class="flex-column center space-between">
+            </div>
+        </div>
+    </div>
+
+    <section id="body" class="flex-column center fH fW ">
+        <div>
+            <h1 class="t-kg error t-center">ERROR <span id="error"> 404 </span> <br><br> EL CONTENIDO QUE BUSCABAS NO EXISTE</h1>
+        </div>
+        
+    </section>
+    <script src="?type=js&page=general"></script>
+    <script src="?type=js&page=logout"></script>
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script> 
+</body>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+
+</html>

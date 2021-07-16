@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Home</title>
+    
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-homeProfessor">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+<body class="flex-column fW fH">
+    <section id="body" class="flex-column center fH fW">
+        <div class="flex-row center">
+            <a href="?type=html&page=gestionActividades">
+                <div class="flex-column center type">
+                    <i class="icon actividades"></i>
+                    <span class="titulo-menu t-yusei has-text" data-text="homeProfesor-act"></span>
+                </div>
+            </a>
+            
+            
+            <a href="?type=html&page=listaUsuarios">
+                <div class="flex-column center type">
+                    <i class="icon registrar"></i>
+                    <span class="titulo-menu t-yusei has-text" data-text="homeProfesor-regUser"></span>
+                </div>    
+            </a>
+            
+        </div>
+        
+        <div  class="flex-row center">
+            
+            <a href="?type=html&page=gestionGrupos">
+                <div class="flex-column center type">
+                    <i class="icon grupos"></i>
+                    <span class="titulo-menu t-yusei has-text" data-text="homeProfesor-grupos"></span>
+                </div>
+            </a>
+            
+            <a href="?type=html&page=estadisticas">
+                <div class="flex-column center type">
+                    <i class="icon estadisticas"></i>
+                    <span class="titulo-menu t-yusei has-text" data-text="homeProfesor-estad"></span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+    <div class="logOut">
+        <form method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="general-logOut"></div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+</body>
+<script src="?type=js&page=home_profesor"></script>
+<script src="?type=js&page=client_connector"></script>
+<script src="?type=js&page=textPopulator"></script>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+</html>

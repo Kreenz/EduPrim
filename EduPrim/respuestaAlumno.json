@@ -1,0 +1,13 @@
+{
+    "respuestaCorta": "<div id='pizzarra'>?</div><div id='respuestas'><div id='tipo-pregunta'>?</div><textarea id='respuesta-corta'></textarea></div>",
+    "respuestaEscoger": "<div id='pizzarra'>?</div><div id='respuestas'><div id='tipo-pregunta'>?</div><div id='opciones'><div id='o-1' class='opcion'>?</div></div></div>",
+    "respuestaMultiopcion": "<div id='pizzarra'>?</div><div id='respuestas'><div id='tipo-pregunta'>?</div><div id='opciones'><div id='o-1' class='opcion'>?</div></div></div>",
+    "respuestaOperacionesMatematicas": "<div id='pizarra-wide'><div id='col1' class='col-math'><div class='operacion'><span id='o-1'></span><input id='r-1' class='r-math'></textarea></div></div><div id='col2' class='col-math'><div class='operacion'><span id='o-2'></span><input id='r-2' class='r-math'></textarea></div></div><div id='col3' class='col-math'><div class='operacion'><span id='o-3'></span><input id='r-3' class='r-math'></textarea></div></div></div>",
+    "respuestaOrdenacion": "<div id='pizzarra'>?</div><div id='respuestas'><div id='tipo-pregunta'>?</div><div id='opciones'><div id='o-1' class='opcion'><span>1. </span>?</div></div></div>",
+    "respuestaRelacionar": "<div id='pizarra-wide'><div class='rel-elements'><div class='col-left'><div class='el'><div class='rel'>aa</div><div class='dot'></div></div></div><div class='col-right'><div class='el'><div class='dot'></div><div class='rel'>aa</div></div></div><canvas id='lines'></canvas></div></div>",
+    "respuestaMapaConceptual": "<div id='pizzarra'><div id='enunciado'>?</div><img id='mapa' src='?type=res&file=icon-responseActivity.png&dir=imgs/'></div><div id='respuestas'><div id='tipo-pregunta'>?</div><div id='opciones'><div id='o-1' class='opcion'><img class='o-img' src='?type=res&file=icon-responseActivity.png&dir=imgs/'></div></div></div>",
+    "espera": "<div id='espera'><img class='waiting' src='?type=res&file=wait.gif&dir=imgs/'/><p id='pop-esperando' class='esperando has-text' data-text='actividadAlumno-espera'>Espera por favor</p></div>",
+    "respuestaArrastrarVacio": "<div id='pizzarra'>?<div id='v-1' class='vacio'></div></div><div id='respuestas'><div id='tipo-pregunta'>?</div><div id='opciones'><div id='o-1' class='opcion'>?</div></div></div>"
+}
+
+

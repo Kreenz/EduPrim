@@ -1,0 +1,153 @@
+body{
+    position: fixed;
+}
+
+#body{
+    margin-top: 10vh;
+}
+
+#body > div:nth-child(1) > input{
+    margin-right: 9vh;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+.label{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Chalkaholic';
+}
+
+#registrarse{
+    background-color: #9999ff;
+}
+
+.button > span{
+    transition:font-size 0.2s;
+}
+
+.button:hover > span{
+    font-size: 20px;
+}
+
+.filters{
+    width: 70%;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    background:#71c2d3;
+    border: 2px solid #666;
+}
+
+.filters > *{
+    margin-left: 40px;
+}
+
+.filters > span{
+    padding: 15px;
+    background: #71c7d8;
+    border-radius: 5px;
+    border:2px solid #666;
+}
+
+.filters > div > select{
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+form{
+    width: 70%;
+    max-height: 70vh;
+    overflow-y: auto;
+    justify-content: center;
+    /* min-height: 550px; */
+    /* padding: 30px; */
+}
+
+form > div:nth-child(1){
+    margin-bottom: 45px;
+}
+
+.list{
+    height: 600px;
+}
+
+.list > div:nth-child(1){
+    height: 50px;
+    width: 305px;
+    margin-left: 5px;
+    background-color: white;
+    border: 2px solid #565656;
+    margin-bottom: 10px;
+}
+
+.menu-items > div {
+    width: 50%;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    overflow-x: visible;
+}
+
+#grupo{
+    background: #eeeeee;
+}
+
+#addItem{
+    background-color:#66ff99;
+}
+
+#deleteItem{
+    background-color: #dc3545;
+}
+
+#modifiyItem{
+    background-color:#66cccc;
+}
+
+#addItem:hover{
+    box-shadow: 0 0 10px 4px #66ff99;
+}
+
+#deleteItem:hover{
+    box-shadow: 0 0 10px 4px #dc3545;
+}
+
+#modifiyItem:hover{
+    box-shadow: 0 0 10px 4px #66cccc;
+}
+
+.item-user{
+    border: 2px solid #565656;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    height: 50px;
+    width: 295px;
+    background-color: #eeeeee;
+    padding:5px;
+    cursor: pointer;
+}
+
+.item-user > div:nth-child(2){
+    width: 100%;
+}
+
+.logOut > form{
+    width: auto;
+    min-height: auto;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}

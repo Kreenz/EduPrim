@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduPrim - Home</title>
+
+        <link rel="stylesheet" href="?type=css&page=style-general">
+        <link rel="stylesheet" href="?type=css&page=style-fonts">
+        <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="?type=css&page=style-listaEntregas">
+    </head>
+    <body class="flex-column fW fHm">
+        <div id="goBack"></div>
+        
+        <div id="popUp"> 
+            <div class="flex-column center flex-start">
+                <div class="mark fW flex-row flex-end">
+                    <i id="closePopUp" class="fas fa-window-close">
+                        <div></div>
+                    </i>
+                </div>
+                <div id="popUpContent" class="flex-column center flex-start">
+                </div>
+            </div>
+        </div>
+        <section id="body" class="flex-row space-around fH fW">
+            <div class="flex-column center flex-start fH list-entregas m-l5">
+                <div class="flex-column center">
+                    <span class="has-text chalk t-center m-b5">ENTREGAS DE LA ACTIVIDAD</span>
+                    <span class="has-text chalk t-center t-imp t-m">nombreActividad</span>
+                </div>
+                <div class="flex-column center list-items">
+
+                    <div class="flex-row item-user">
+                        <i class="icon-activity"></i>
+                        <div class="flex-row center">
+                            <span class="texto t-s">ORIOL FORNOS</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-row item-user">
+                        <i class="icon-activity"></i>
+                        <div class="flex-row center">
+                            <span class="texto t-s">ORIOL FORNOS</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-row item-user">
+                        <i class="icon-activity"></i>
+                        <div class="flex-row center">
+                            <span class="texto t-s">ORIOL FORNOS</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-row item-user">
+                        <i class="icon-activity"></i>
+                        <div class="flex-row center">
+                            <span class="texto t-s">ORIOL FORNOS</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="flex-column center flex-start fH">
+                <div id="menu-preview" class="flex-row flex-start">
+                    <div class="item-preview">
+                        <div class="flex-column center item-p-r">
+                            <span class="texto t-mini">1</span>
+                        </div>
+                        <div class="item-p-c">
+                        </div>
+                    </div>
+
+                    <div class="item-preview">
+                        <div class="flex-column center item-p-r">
+                            <span class="texto t-mini">2</span>
+                        </div>
+                        <div class="item-p-i">
+                        </div>
+                    </div>
+
+                    <div class="item-preview">
+                        <div class="flex-column center item-p-i">
+                            <span class="texto t-mini">3</span>
+                        </div>
+                        <div class="item-p-i">
+                        </div>
+                    </div>
+
+                    <div class="item-preview">
+                        <div class="flex-column center item-p-r">
+                            <span class="texto t-mini">4</span>
+                        </div>
+                        <div class="item-p-c">
+                        </div>
+                    </div>
+
+                    <div class="item-preview">
+                        <div class="flex-column center item-p-r">
+                            <span class="texto t-mini">5</span>
+                        </div>
+                        <div class="item-p-c">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="bodyActivity">
+                    <div class="flex-row center space-between p-1">
+                        <div class="icon arrow-pointer-back i-m"></div>
+                        <span id="nombrePregunta" class="has-text chalk">NOMBRE PREGUNTA</span>
+                        <div class="icon arrow-pointer i-m"></div>
+                    </div>
+                    <div id="studentResponse">
+
+                    </div>
+                </div>
+                <div id="teacherAnswer" class="flex-column center space-around fW">
+                    <div class="flex-row center space-around fW">
+                        <div class="flex-row center">
+                            <label for="correct" class="chalk t-m m-r1 has-text">CORRECTO</label>
+                            <input type="radio" id="correct" name="teacherAnswer" value="correct">
+                        </div>
+                        <div class="flex-row center">
+                            <label for="incorrect" class="chalk t-m m-r1 has-text">INCORRECTO</label>
+                            <input type="radio" id="incorrect" name="teacherAnswer" value="incorrect">
+                        </div>
+                    </div>
+                    <button id="initAnon" class="flex-row space-between button item-m">
+                        <div class="flex-column center fW has-text" data-text="login-invitado">
+                            <span class="has-text" data-text="">TERMINAR</span>
+                        </div>
+                        <div class="flex-column center"><i class="fas fa-save"></i></div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+        <div class="logOut">
+            <form method="POST" action="/logOut">
+                <button id="logOut" type="submit" class="flex-row space-between button">
+                    <div class="flex-column center fW has-text" data-text="logOut"></div>
+                    <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+                </button>
+            </form>
+        </div>
+        <script src="?type=js&page=client_connector"></script>
+        <script src="?type=js&page=general"></script>
+        <script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+

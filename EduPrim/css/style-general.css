@@ -1,0 +1,557 @@
+/*
+    Este esta bien de links
+
+*/
+
+#popUp{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.msg-errorModal {
+    text-align: center;
+}
+
+#popUp > div {
+    background-color:#e3e3fd;
+    left: 35vw;
+    top: 10vh;
+    position: fixed;
+    width: 36.5vw;
+    min-height: 30vh;
+    border-radius: 10px;
+}
+
+#popUpContent {
+    margin-top: 5px;
+    min-height: 30vh;
+    margin-bottom: 10px;
+}
+
+#popUpText{
+    font-size: 5vh;
+}
+
+#popUpContent > span{
+    margin-bottom: 30px;
+}
+
+#closePopUp{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#closePopUp > div{
+    margin-top: -23px;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fc2323;
+    transition: color 0.3s;
+}
+
+#goBack{
+    background-image: url('?type=res&file=arrow_pointerback.png&dir=imgs/');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    min-width: 35px;
+    min-height: 35px;
+}
+
+body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-image: url('?type=res&file=background-login.png&dir=imgs/');
+    /* background-size: 100% auto; */
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+#body{
+    top:0;
+    left:0;
+}
+
+.t-cha{
+    font-family: 'Chalkaholic';
+}
+
+.t-fre{
+    font-family: 'Frederick';
+}
+
+.t-yusei{
+    font-family: 'YuseiMagic';
+}
+
+.t-jelly{
+    font-family: 'JellyBean';
+}
+
+.pink{
+    color:#fc3681;
+}
+
+.green{
+    color:#3ab86f;
+}
+
+.blue{
+    color:#0a2568;
+}
+
+.yellow{
+    color:#fede29;
+}
+
+.t-kg{
+    font-family: 'KGSummerSunshine';
+}
+
+.t-center{
+    text-align: center;
+}
+
+/* Classe button para toda la web, si quieres un boton standar usa esto */
+
+#confirmAction{
+    width: 10vw;
+    height: 5vh;
+    background-color: #66ff99;
+    font-size: 2vh;
+}
+
+#cancelAction{
+    margin-left: 2vw;
+    width: 10vw;
+    height: 5vh;
+    background-color: #ff0000;
+    font-size: 2vh;
+}
+
+.button{
+    padding: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin-top: 10px;
+    height: 4vw;
+    width: 22vw;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 0px 0px black;
+    cursor: pointer;
+    transition: font-size 0.2s;
+    background-color: #9999ff;
+}
+
+.buttonSmall{
+    height: 2vw;
+    width: 10vw;
+    font-size: 0.9vw;
+}
+
+.button > div{
+    height: 100%;
+}
+
+.button > div:nth-child(2){
+    background-color: gray;
+    height: 100%;
+    width: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button > div:nth-child(2) > i{
+    font-size: 2vw;
+}
+
+.buttonSmall > div:nth-child(2) > i{
+    font-size: 1vw;
+}
+
+/* Inputs de toda la web, son los generales */
+input{
+    height: 50px;
+    width: 300px;
+    font-size: 2vw;
+    border: 2px solid #565656;
+    text-align: center;
+    font-family: 'YuseiMagic';
+}
+
+input[type="radio"]{
+    width: 1.8vw;
+    height: auto;
+}
+
+input::placeholder{
+    color:#c0c0c0;
+    text-align: center;
+    font-family: 'YuseiMagic';
+    font-size: 4vw;
+}
+
+input[type="radio"]:focus{
+    box-shadow: none;
+}
+
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px 4px #fff;
+}
+
+select{
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+    font-size: 40px;
+    border: 2px solid #565656;
+    text-align: center;
+    font-family: 'Chalkaholic';
+}
+
+.item-activity{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 320px;
+    background-color: #eeeeee;
+    padding:5px;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.item-activity:hover{
+    background-color: #33ffff;
+}
+
+/* TAMAÑO ITEMS MENU */
+
+.item-b{
+    height: 50px;
+    width: 320px;
+}
+
+.item-m{
+    height: 35px;
+    width: 200px;
+}
+
+.item-ms{
+    height: 35px;
+    width: 70px;
+}
+
+.item-s{
+    height: 20px;
+    width: 130px;
+}
+
+
+/* TAMAÑO ICONOS */
+
+.i-s{
+    width: 2.5vw !important;
+    height: 4vw !important;
+}
+
+.i-m{
+    width: 50px !important; 
+    height: 50px !important;
+}
+
+.i-b{
+    width: 6vw !important;
+    height: 6vw !important;
+}
+
+/* TAMAÑO TEXTO */
+
+.t-mini{
+    font-size: 10px !important;
+}
+
+.t-s{
+    font-size: 15px !important;
+}
+
+.t-m{
+    font-size: 1.5vw;
+}
+
+.t-b{
+    font-size: 2.3vw;
+}
+
+.t-g{
+    font-size: 7vw;
+}
+
+.t-imp{
+    color: #f8bf16;
+}
+
+.icon-activity{
+    background-image: url('?type=res&file=icon-activity.png&dir=imgs/');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 4vw;
+    height: 4vw;
+    max-height: 45px;
+    max-width: 40px;
+}
+
+.icon-responseActivity{
+    background-image: url('?type=res&file=icon-responseActivity.png&dir=imgs/');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    width: 4vw;
+    height: 4vw;
+    max-height: 55px;
+    max-width: 55px;
+}
+
+.texto{
+    font-family: 'Frederick';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.chalk{
+    font-size: 30px;
+    font-family: 'Chalkaholic';
+}
+
+/* Hay dos imagenes de esta con dos clases distintas, igual estaria bien hacer una general en vez de dos */
+.arrow-pointer{
+    background-image: url('?type=res&file=arrow_pointerb.png&dir=imgs/');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 50px;
+    height: 120px;
+}
+
+.arrow-pointer-back{
+    background-image: url('?type=res&file=arrow_pointerback.png&dir=imgs/');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 50px;
+    height: 120px;
+}
+
+.codigo{
+    width: 13vw;
+    height: 8vh;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+/*
+Se usa en mas lados que solo en poner los codigos
+*/
+.submitCodigo{
+    width: 70px;
+    height: 55px;
+    background-image: url("?type=res&file=arrow_pointerb.png&dir=imgs/");
+    background-size: 70px 55px;
+    cursor: pointer;
+}
+
+.icon{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 270px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.estadisticas{
+    background-image: url('?type=res&file=estadisticas.png&dir=imgs/');
+}
+
+.grupos{
+    background-image: url('?type=res&file=GRUPS.png&dir=imgs/');
+}
+
+.registrar{
+    background-image: url('?type=res&file=reg_user.png&dir=imgs/');
+}
+
+.actividades{
+    background-image: url('?type=res&file=actividades.png&dir=imgs/');
+}
+
+.titulo-menu {
+    margin-bottom: 5vh;
+    color: #000000;
+    text-decoration: none;
+}
+
+.crud-menu{
+    width: 25vw;
+    height: 4vw;
+    border:2px solid #565656;
+    margin-bottom: 15px;
+}
+
+.crud-menu > div{
+    width: 33.3%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.crud-menu > div:nth-child(1){
+    background-color: #66ff99;
+}
+
+.crud-menu > div:nth-child(1):hover{
+    box-shadow: 0 0 10px 4px #66ff99; 
+}
+
+.crud-menu > div:nth-child(2){
+    background-color: #fc2323;
+}
+
+.crud-menu > div:nth-child(2):hover{
+    box-shadow: 0 0 10px 4px #fc2323; 
+}
+
+.crud-menu > div:nth-child(3){
+    background-color: #33ffff;
+}
+
+.crud-menu > div:nth-child(3):hover{
+    box-shadow: 0 0 10px 4px #33ffff; 
+}
+
+.crud-menu > div:nth-child(4){
+    background-color: #10963c;
+}
+
+.crud-menu > div:nth-child(4):hover{
+    box-shadow: 0 0 10px 4px #10963c; 
+}
+
+.buscador{
+    height: 3.5vw;
+    width: 21vw;
+}
+
+.arrow-left{
+    background-image: url('?type=res&file=arrow-left.png&dir=imgs/');
+}
+
+.arrow-right{
+    background-image: url('?type=res&file=arrow-right.png&dir=imgs/');
+}
+
+.mark-item{
+    background-color: #33ffff !important;
+}
+
+/* MENU PARA DEL FOOTER PARA LAS PAGINAS DE CREACION */
+
+.endMenu > div:nth-child(1){
+    margin-left: 15px;
+}
+
+.endMenu > div:nth-child(3){
+    margin-right: 15px;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#addNewPage{
+    font-size: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Para el logOut de la web */
+
+.logOut{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+/* ESTILO ITEMS DE LISTA DE USUARIOS */
+
+
+.list-items {
+    overflow-y: auto;
+    max-height: 20vw;
+}
+
+input.has-placeholder::placeholder{
+    font-size: 1.5vw;
+}
+
+i.fas.fa-sign-in-alt{
+    font-size: 1vw !important;
+}
+
+i.fas.fa-user-secret{
+    font-size: 1vw !important;
+}
+
+.item-user{
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    height: 4vw;
+    width: 20.5vw;
+    background-color: white;
+    padding:5px;
+    cursor: pointer;
+}
+
+.item-user:hover{
+    background-color: #f8bf16 !important;
+}
+
+.item-user > div:nth-child(2){
+    width: 100%;
+}
+
+#searchButton{
+    height: 3.6vw;
+    width: 4.5vw;
+    background-color: #565656;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

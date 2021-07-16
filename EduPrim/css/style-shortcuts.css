@@ -1,0 +1,109 @@
+/* escribe rapido y furioso con esto en el html 
+esta bien de links */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.centermulti{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.fW{
+    width: 100%;
+}
+
+.fH{
+    height: 100%;
+}
+
+.fHm{
+    min-height: 100%;
+}
+
+.m-20{
+    margin-top: 200px;
+}
+
+.m-t5{
+    margin-top: 50px;
+}
+
+.m-b5{
+    margin-bottom: 50px;
+}
+
+.m-l5{
+    margin-left:50px;
+}
+
+.m-r5{
+    margin-right: 50px;
+}
+
+.m-l1{
+    margin-left: 10px;
+}
+
+.m-r1{
+    margin-right: 10px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.p-05{
+    padding: 5px;
+}
+
+.m-t1{
+    margin-top: 10px;
+}
+
+.m-b1{
+    margin-bottom: 10px;
+}
+
+.f-bold{
+    font-weight: bold;
+}

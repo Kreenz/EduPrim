@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Estadisticas</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="?type=css&page=style-estadisticas">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+    <script src="?type=js&page=chart"></script>
+</head>
+
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <div class="logOut">
+        <form method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="logOut">CERRAR SESSIÓN</div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+    <div id="popUp"> 
+        <div class="flex-column center flex-start">
+            <div class="mark fW flex-row flex-end">
+                <i id="closePopUp" class="fas fa-window-close">
+                    <div></div>
+                </i>
+            </div>
+            <div id="popUpContent" class="flex-column center space-between">
+            </div>
+        </div>
+    </div>
+
+    <section id="body" class="flex-row center fH fW ">
+        <div class="flex-column center flex-start fH">
+        <!--
+            <div class="flex-column center" id="menu1">
+                <h1 class="tituloSelect t-yusei">GRUPOS:</h1>
+                <div class="flex-row center">
+                    <select id="groupList" class="t-yusei">
+                        <option>placeholder</option>
+                    </select>
+                    <button id="selectedGroup" class="buttonMini"><i class="fas fa-users"></i></button>
+                </div>
+
+            </div>
+        -->
+            <div class="flex-column center" id="menu2">
+                <h1 class="tituloSelect t-yusei">ACTIVIDAD:</h1>
+                <div class="flex-column center">
+                    <select id="activityList" class="t-yusei">
+                        <option>placeholder</option>
+                    </select>
+                    <button id="selectedActivity" class="button">
+                        <span class="t-yusei t-m">Estadisticas de la Actividad</span>
+                        <i class="fas fa-paste"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="flex-column center" id="menu2">
+                <h1 class="tituloSelect t-yusei">ALUMNO:</h1>
+                <div class="flex-column center">
+                    <select id="studentList" class="t-yusei">
+                        <option>placeholder</option>
+                    </select>
+                    <button id="selectedStudent" class="button">
+                        <span class="t-yusei t-m">Estadisticas del Alumno</span>
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="flex-column center flex-start page">
+
+            <div id="menu" class="flex-row center flex-start m-l1 fW">
+                <div id="menuItem1" class="flex-row center item-user mark-page">
+                    <div class="flex-row center">
+                        <span class="t-yusei f-bold t-m t-center" > GRUPOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pageBody" class="flex-column center flex-start p-t1 fH fW">
+                <span class="t-yusei t-b">NO HAY DATOS QUE MOSTRAR</span>
+            </div>
+        </div>
+    </section>
+    <script src="?type=js&page=general"></script>
+    <script src="?type=js&page=estadisticas"></script>
+    <script src="?type=js&page=estadisticasfunct"></script>
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script> 
+
+</body>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+
+</html>

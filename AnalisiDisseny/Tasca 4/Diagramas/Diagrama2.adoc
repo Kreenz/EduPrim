@@ -1,0 +1,92 @@
+[plantuml, file="Diagrama.png"]
+++++
+:Alumne: as Alumne
+:Profesor: as Profesor
+:Admin: as Admin
+:Anonymous: as Anonymous
+:Persona: <<abstract>> as Persona
+:Persona2: <<abstract>> as Persona2
+:Persona3: <<abstract>> as Persona3
+
+left to right direction
+skinparam packageStyle rectangle
+Rectangle "Sistema"{
+(UC1: Iniciar sesió) as uc1
+(UC2: Donar de baixa a un usuari) as uc2
+(UC3: Donar d’alta a un ususari) as uc3
+(UC4: Modificar dades d’un usuari) as uc4
+(UC5: Crear activitat) as uc5
+(UC6: Eliminar activitat) as uc6
+(UC7: Importar una activitat) as uc7
+(UC8: Exportar a una activitat) as uc8
+(UC9: Accedir a una activitat) as uc9
+(UC10: Llançar una activitat) as uc10
+(UC11: Fer una activitat) as uc11
+(UC12: Veure resultats) as uc12
+(UC13: Gestionar incidencia) as uc13
+(UC14: Veure estadistiques d’usuaris) as uc14
+(UC15: Veure estadistiques d'activitats) as uc15
+(UC16: Gestionar grup) as uc16
+(UC17: Afegir alumne al grup) as uc17
+(UC18: Eliminar alumne del grup) as uc18
+(UC19: Cercar dades  ) as uc19
+(UC20: Tancar sessió d'usuari) as uc20
+(UC21: Modificar activitat) as uc21
+(UC22: Tancar activitat) as uc22
+(UC23: Veure activitat) as uc23
+(UC24: Veure preview) as uc24
+(UC25: Modificar evaluació) as uc25
+(UC26: Evaluar activitat) as uc26
+(UC27: Veure respostes) as uc27
+}
+
+Persona <|---- Alumne
+Persona <|---- Profesor
+Persona <|---- Admin
+Persona <|---- Anonymous
+Persona ---- uc1
+Persona ---- uc19
+Persona ---- uc20
+
+Admin -- uc2
+Admin -- uc3
+Admin -- uc4
+Admin -- uc13
+uc4-[hidden]-uc2
+
+Profesor -- uc5
+Profesor -- uc6
+Profesor -- uc7
+Profesor -- uc8
+Profesor -- uc15
+Profesor -- uc16
+Profesor -- uc21
+Profesor -- uc22
+Profesor -- uc24
+Profesor - uc10
+uc5-[hidden]- uc24
+uc5 ..> uc23: <<include>>
+uc16 <.. uc17: <<extend>>
+uc16 <.. uc18: <<extend>>
+uc15 <.. uc14: <<extend>>
+uc14 <.. uc12: <<extend>>
+uc26 .> uc14: <<extend>>
+uc25 ..> uc26: <<extend>>
+
+uc12 <. uc27: <<extend>>
+
+uc9 ..> uc11: <<include>>
+uc11 <.. uc12: <<extend>>
+
+Persona2 <|-- Alumne
+Persona2 <|-- Anonymous
+Persona2 -- uc9
+uc11 ..> uc23: <<include>>
+
+Persona3 <|- Alumne
+Persona3 <|- Profesor
+Persona3 <|- Admin
+Persona3 - uc20
+
+
+++++

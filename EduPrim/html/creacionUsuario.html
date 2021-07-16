@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Creación Usuario</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-registro">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    
+    <div id="popUp"> 
+        <div class="flex-column center flex-start">
+            <div class="mark fW flex-row flex-end">
+                <i id="closePopUp" class="fas fa-window-close">
+                    <div></div>
+                </i>
+            </div>
+            <div id="popUpContent" class="flex-column center flex-start">
+            </div>
+        </div>
+    </div>
+
+    <section id="body" class="flex-column center fH fW">
+        <form action="" method="POST" class="flex-row center" name="registrar">
+            <div class="flex-column center flex-start fH">
+                <label class="label" for="nombre">NOMBRE</label>
+                <label class="label" for="apellidos">APELLIDOS</label>
+                <label class="label" for="password">CONTRASEÑA</label>
+                <label class="label" for="confirmPassword">REPETIR PASS</label>
+                <label class="label" for="tipoCuenta">TIPO</label>
+                <label class="label" for="grupo">GRUPO</label>
+            </div>
+
+            
+            <div class="flex-column center flex-start fH">
+                <!-- Nombre -->
+                <input type="text" name="nombre" placeholder="NOMBRE">
+
+                <!-- Apellidos -->
+                <input type="text" name="apellidos" placeholder="APELLIDOS">    
+                
+                <!-- Contraseña -->
+                <input type="password" name="password" placeholder="PASSWORD">    
+                
+                <!-- Repetir contraseña -->
+                <input type="password" name="confirmPassword" placeholder="REPETIR PASS">    
+
+                <!-- Selector de tipo de cuenta  -->
+                <select name="tipoCuenta" id="tipoCuenta">
+                    <option value="PRF">Professor</option>
+                    <option value="ALU">Alumno</option>
+                    <option value="ADM">Administrador</option>
+                </select>
+    
+                <!-- Selector de grupo  -->
+                <select name="grupo" id="grupo">
+                    <option value="Grupo A">Grupo A</option>
+                    <option value="Grupo B">Grupo B</option>
+                    <option value="Grupo C">Grupo C</option>
+                </select>
+
+                <button type="submit" id="registrarse" class="flex-row space-between button">
+                    <div class="flex-column center fW">REGISTRARSE</div>
+                    <div class="flex-column center"> <i class="fas fa-sign-in-alt"></i></div>
+                </button>
+            </div>
+
+        </form>
+        
+    </section>
+    <script src="?type=js&page=general"></script>
+    <script src="?type=js&page=gestionUsuarios"></script>
+    <script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+</body>
+</html>

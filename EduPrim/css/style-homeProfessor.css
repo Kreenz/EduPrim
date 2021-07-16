@@ -1,0 +1,23 @@
+body{
+    position: fixed;
+}
+
+.type{
+    width: 30vw;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#body > div > a:nth-child(1){
+    margin-right: 20px;
+}
+
+#body > div:nth-child(1){
+    margin-bottom: 20px;
+}
+
+div.flex-column.center.type > i.icon{
+    width: 15vw;
+    height: 40vh;
+}

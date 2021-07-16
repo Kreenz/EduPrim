@@ -1,0 +1,14 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian/contrib-stretch64"
+  config.vm.hostname = "eduprim"
+  config.vm.post_up_message = "Ejecuta ./start.sh para encender el servidor"
+  config.vm.define "eduprim"
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.provision "shell", path: "initialize.sh"
+  config.vm.provision "shell", path: "update.sh", run: "always"
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "eduprim"
+    vb.memory = "1024"
+    vb.cpus = 1
+  end
+end

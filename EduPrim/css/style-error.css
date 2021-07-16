@@ -1,0 +1,10 @@
+#body > div {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border: 1px solid #666;
+}
+
+.error{
+    font-size: 3.3vw !important;
+}

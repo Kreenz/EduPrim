@@ -1,0 +1,111 @@
+/* esta bien de links */
+#menuItem1{
+    width: 53.9vw;
+    background-color: #33ffff;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    height: 4vw;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.arrow-left, .arrow-right{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+#body > div:nth-child(1) {
+    width: 450px;
+    margin-top: 20vh;
+    margin-right: 7.2vw;
+    margin-left: 7vw;
+}
+
+.listMenu{
+    overflow-y: auto;
+    max-height: 40vh;
+}
+
+#body > div:nth-child(1) > div:nth-child(1) {
+    margin-left: 3.5vw;
+}
+
+
+#body > div:nth-child(1) > div:nth-child(2) {
+    margin-left: 2.5vw;
+}
+
+.buscador{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#body{
+    background-image: url(?type=res&file=background-profe.jpg&dir=imgs/);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item-activity > span{
+    cursor: pointer;
+}
+
+.crud-menu{
+    width: 25vw;
+    height: 4vw;
+    border: 2px solid #565656;
+    margin-bottom: 15px;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+#pageBody1{
+    display: flex;
+}
+
+
+
+#pageBody {
+    border: 2px solid white;
+    background-image: url(?type=res&file=background-body.png&dir=imgs/);
+    background-size: 100% 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.page{
+    width: 55vw;
+    height: 82vh;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#menu-preview > .item-preview:nth-child(1){
+    margin-left: 5px;
+}
+
+#bodyActivity > div:nth-child(1){
+    width:  97%;
+    height: 50px;
+}
+
+
+/*  Mensaje seleccion grupos */
+.seleccionaGrupo{
+    font-size: 2vw;
+    padding-top: 7vh;
+}
+
+.head-row{  
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+}
+

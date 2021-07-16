@@ -1,0 +1,39 @@
+@font-face{
+    font-family: 'Gobsmacked';
+    src: url('?type=res&file=Gobsmacked.otf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'Chalkaholic';
+    src: url('?type=res&file=Chalkaholic.otf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'Charcoal';
+    src: url('?type=res&file=Charcoal.otf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'Frederick';
+    src: url('?type=res&file=Frederick.ttf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'YuseiMagic';
+    src: url('?type=res&file=YuseiMagic-Regular.ttf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'Caroni';
+    src: url('?type=res&file=Caroni-Regular.otf&dir=fonts/');
+}
+
+@font-face{
+    font-family: 'KGSummerSunshine';
+    src: url('?type=res&file=KGSummerSunshine.ttf&dir=fonts/')
+}
+
+@font-face{
+    font-family:"JellyBean";
+    src: url('?type=res&file=JellyBean.ttf&dir=fonts/');
+}

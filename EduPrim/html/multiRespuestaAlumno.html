@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Multirespuesta Alumno</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-multiRespuestaAlumno">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <div id="clock"></div>
+    <section id="body" class="flex-column center fH fW">
+
+        <div id="pizarra" class="flex-column center">
+            <span id="enunciat" class="flex-row center">Enunciat </span>
+        </div>
+        <div id="respuestas" class="flex-column center">
+            <div id="lineaA" class="ans-row flex-row">
+                <div id="respA" class="ans flex-row">
+                    <div id="A" class="before-ans flex-row center">A</div>
+                    <div id="content-A" class="after-ans flex-row center">Respuesta A</div>
+                </div>
+                <div id="respB" class="ans flex-row">
+                    <div id="B" class="before-ans flex-row center">B</div>
+                    <div id="content-B" class="after-ans flex-row center">Respuesta B</div>
+                </div>
+            </div>
+            <div id="lineaB" class="ans-row flex-row">
+                <div id="respC" class="ans flex-row">
+                    <div id="C" class="before-ans flex-row center">C</div>
+                    <div id="content-C" class="after-ans flex-row center">Respuesta C</div>
+                </div>
+                <div id="respD" class="ans flex-row">
+                    <div id="D" class="before-ans flex-row center">D</div>
+                    <div id="content-D" class="after-ans flex-row center">Respuesta D</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="flex-row center fW endMenu">
+        <button id="initAnon" class="flex-row space-between button">
+            <div class="flex-row center fW has-text">Siguiente</div>
+            <div class="flex-column center">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Crear Actividad</title>
+    
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-creacionActividad">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <section id="body" class="flex-column center flex-start fH fW">
+        <div class="flex-row center flex-end fW">
+            <select name="grupo" id="grupo">
+                <option value="Grupo A">TIPO A</option>
+                <option value="Grupo B">TIPO B</option>
+                <option value="Grupo C">TIPO C</option>
+            </select>
+
+            <div class="flex-column center time-activity">
+                <span id="timerText" contenteditable="true">00:00</span>
+            </div>
+        </div>
+        <div class="flex-row center flex-start fW">
+            <div class="flex-column center">
+                <textarea id="idEnunciado">Enunciado</textarea>
+            </div>
+        </div>
+
+        <div id="listActivities" class="flex-row center flex-start wrap fW">
+            <div class="flex-row center">
+                <span>1.</span>
+                <textarea id="idRespuesta"></textarea>
+                <button id="idDelete">-</button>
+            </div>
+
+            <div class="flex-row center">
+                <span>2.</span>
+                <textarea id="idRespuesta"></textarea>
+                <button id="idDelete">-</button>
+            </div>
+
+            <div class="flex-row center">
+                <span>3.</span>
+                <textarea id="idRespuesta"></textarea>
+                <button id="idDelete">-</button>
+            </div>
+
+            <div class="flex-row center">
+                <button id="anadirRespuesta">+</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="flex-row center space-between fW endMenu">
+        <div class="icon arrow-pointer-back i-b"></div>
+        <button id="initAnon" class="flex-row space-between button">
+            <div class="flex-column center fW has-text" data-text="login-invitado"></div>
+            <div class="flex-column center"><i class="fas fa-check-square"></i></div>
+        </button>
+        <div class="flex-row center flex-end">
+            <button id="addNewPage" class="i-m">+</button>
+            <div class="icon arrow-pointer i-b"></div>
+        </div>
+        
+    </div>
+
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script>
+    <script src="?type=js&page=gestionGrupos"></script>
+    <script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+</body>

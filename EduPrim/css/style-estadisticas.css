@@ -1,0 +1,386 @@
+/* esta bien de links */
+
+.head-row{
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.arrow-left, .arrow-right{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+#body > div:nth-child(1){
+    width: 450px;
+    margin-top: 20vh;
+    margin-right: 5vw;
+}
+
+#body > div:nth-child(1) > div:nth-child(1){
+    margin-left: 54px;
+    margin-bottom: 10vh;
+}
+
+#body > div:nth-child(1) > div:nth-child(2) {
+    margin-left: 54px;
+    margin-bottom: 10vh;
+}
+
+#body > div:nth-child(1) > div:nth-child(3) {
+    margin-left: 54px;
+}
+
+.buscador{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border:1px solid white;
+    border-right: none;
+}
+
+#body{
+    background-image: url('?type=res&file=background-profe.jpg&dir=imgs/');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bordePulsado{
+border-color: tomato;
+}
+
+.page{
+    width: 55vw;
+    height: 82vh;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#menu > .item-user{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 1045px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #71c6d9;
+}
+
+#menu > div:nth-child(1){
+    margin-left: -6px;
+}
+
+#pageBody {
+    border: 2px solid white;
+    background-image: url('?type=res&file=background-body.png&dir=imgs/');
+    background-size: 100% 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#pageBody > div:nth-child(1) > input {
+    width: 250px;
+    height: 30px;
+}
+
+#pageBody > div:nth-child(3) > input {
+    width: 250px;
+    height: 30px;
+}
+
+.mark-page{
+    background-color: #33ffff !important;
+}
+
+/*
+
+CORRECCIONES
+
+
+*/
+
+#pageBody2{
+    width: 100%;
+    height: 100%;
+}
+
+#menu-preview{
+    width: 100%;
+    height: 5.6vh;
+    background-color: #666666;
+}
+
+#menu-preview > .item-preview:nth-child(1){
+    margin-left: 5px;
+}
+
+#bodyActivity > div:nth-child(1){
+    width:  97%;
+    height: 50px;
+}
+
+#studentResponse {
+    width: 100%;
+    height: 87%;
+}
+
+#teacherAnswer{
+    width: 100%;
+    height: 10%;
+    background-color: #666666;
+}
+
+#teacherAnswer > div:nth-child(1){
+    background-color: #71c6d9;
+    height: 4vh;
+    width: 25vw;
+    border-radius: 5px;
+}
+
+#teacherAnswer > div > div:nth-child(1):hover{
+    color:#66ff99;
+    text-shadow: 2px 2px 20px #66ff99;
+}
+
+#teacherAnswer > div > div:nth-child(2):hover{
+    color: #dc3545;
+    text-shadow: 2px 2px 20px #dc3545;
+}
+
+#teacherAnswer > button{
+    background-color: #f8bf16;
+    width: 14vw;
+    height: 4vh;
+    margin-top: 0px;
+}
+
+.list-entregas > div:nth-child(1){
+    background-color: #666666;
+    height: 4.7vh;
+}
+
+.list-items2 > .item-user{
+    border: none;
+    border-top: 1px solid #666666;
+    margin-bottom: 0px;
+    width: 200px;
+    height: 30px;
+}
+
+.list-items2 > .item-user:last-child{
+    border-bottom: 1px solid #666666;
+}
+
+.list-items2 {
+    background-color: #666666;
+}
+
+#correcto{
+    color: #66ff99;
+}
+
+
+#incorrecto{
+    color: #fc2323;
+}
+
+.item-preview{
+    width: 1.4vw;
+    height: 3.4vh;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.item-preview > div:nth-child(1) > span{
+    font-size: 10px;
+}
+
+.item-preview > div:nth-child(2){
+    width: 1.4vw;
+    height: 1.7vh;
+}
+
+.item-p-c {
+    background-color: #66ff99;
+}
+
+.item-p-i {
+    background-color: #dc3545;
+}
+
+.item-p-r {
+    background-color: #e8f2a1;
+}
+
+.item-p-e{
+    background-color: #dc3545;
+}
+
+.m-b1-2{
+    margin-bottom: 7px;
+}
+
+.m-t1-2{
+    margin-top: 8px;
+}
+
+.mark-preview{
+    border: 2px solid #002e63;
+    border-radius: 2px;
+}
+
+.item-preview:hover{
+    border:2px solid #f8bf16;
+    border-radius: 2px;
+}
+
+.mark-item2{
+    background-color: #33ffff;
+}
+
+.crud-menu{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.crud-menu > div{
+    width: 33.5%;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.crud-menu > div:nth-child(1){
+    margin-left: 0px;
+}
+
+#menu1 > .item-user > div > span{
+    font-family: 'YuseiMagic';
+    font-size: 25px !important;
+    font-weight: normal;
+}
+
+
+/* PAGE BODY 3 */
+
+#pageBody3 > div:nth-child(1) > div:nth-child(2) {
+    background-color: white;
+    border:2px solid #565656;
+    width: 5vw;
+    height: 4.4vh;
+    margin-left: 0.5vw;
+}
+
+#listActivities > div{
+    margin: 1vh;
+    border-left: 0.1em solid #666666;
+    border-right: 0.1em solid #666666;
+}
+
+select{
+    width: 18vw;
+    height: 4.85vh;
+    margin-top: 0px;
+    font-size: 2vh;
+}
+
+.buttonMini{
+    width: 2.5vw;
+    height: 4vh;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.buttonDelete{
+    background-color: #dc3545;
+}
+
+.buttonAdd{
+    background-color: #66ff99;
+}
+
+.header-start{
+    font-size: 1.3em;
+    margin-left: 0.3vw;
+    font-family: 'YuseiMagic';
+}
+
+.enunciado {
+    margin: 1vh;
+}
+
+.enunciado > div {
+    background-color: #666666;
+    min-width: 15vw;
+    height: 9vh;
+    border-radius: 2px;
+}
+
+.enunciado > div > textarea {
+    background-color: transparent;
+    border: none;
+    width: 98%;
+    height: 98%;
+    max-width: 52vw;
+    resize: horizontal;
+    font-family: 'YuseiMagic';
+    font-size: 1.1em;
+}
+
+#addNewPage{
+    font-size: 23px;
+    border-radius: 3px;
+    background-color: #66ff99;
+    border: none;
+}
+
+button{
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color:#33ffff;
+}
+
+#grafic{
+    width: 40vw;
+    height: 40vh;
+}
+
+div.flex-column.center > h1.tituloSelect.t-yusei{
+    font-size: 4vh;
+}
+
+.p-t1{
+    padding-top: 1vw;
+}
+
+.m-b1{
+    padding-bottom: 1vw;
+}
+
+.resContainer{
+    margin-top: 1vw;
+    width: 5vw;
+    height: 7vw;
+}
+
+.green{
+    background-color: #66ff99;
+}
+
+.red{
+    background-color: #f46465;
+}
+
+h2{
+    margin:0;
+}

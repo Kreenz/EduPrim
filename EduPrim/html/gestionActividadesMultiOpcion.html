@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Home</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-gestionActividades">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <div class="logOut">
+        <form method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="logOut"></div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+    <div id="popUp"> 
+        <div class="flex-column center flex-start">
+            <div class="mark fW flex-row flex-end">
+                <i id="closePopUp" class="fas fa-window-close">
+                    <div></div>
+                </i>
+            </div>
+            <div id="popUpContent" class="flex-column center space-between">
+            </div>
+        </div>
+    </div>
+
+    <section id="body" class="flex-row center fH fW ">
+        <div class="flex-column center flex-start fH">
+            <div class="flex-row center fW">
+                <input class="buscador" type="text" name="searchGrup" placeholder="buscador">
+                <div class="flex-column center"><i class="fas fa-search t-m"></i></div>
+            </div>
+            
+
+            <div class="flex-row flex-start crud-menu">
+                <div id="addItem" class="flex-column center has-text">
+                    <span class="has-text t-yusei t-m" data-text="gestionGrupo-anadir" data-target="#agregar">AÑADIR</span>
+                </div>
+                <div id="removeItem" class="flex-column center" data-toggle="modal" data-target="#borrarModal">
+                    <span class="has-text t-yusei t-m" data-target="#">BORRAR</span>
+                </div>
+                <div id="modifyItem" class="flex-column center" data-toggle="modal" data-target="#update">
+                    <span class="has-text t-yusei t-m" data-target="#">MODIFICAR</span>
+                </div>
+            </div>
+
+            <div class="list-items flex-column center" id="menu1">
+
+                <div class="flex-row item-user">
+                    <i class="icon-activity"></i>
+                    <div class="flex-row center">
+                        <span class="chalk t-m" >ACTIVIDAD A</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex-column center flex-start page">
+
+            <div id="menu" class="flex-row center flex-start m-l1 fW">
+                <div id="menuItem1" class="flex-row center item-user mark-page">
+                    <div class="flex-row center">
+                        <span class="t-yusei f-bold t-m t-center" > GRUPOS</span>
+                    </div>
+                </div>
+                <div id="menuItem2" class="flex-row center item-user">
+                    <div class="flex-row center">
+                        <span class="t-yusei f-bold t-m t-center" > CORRECCIONES </span>
+                    </div>
+                </div>
+                <div id="menuItem3" class="flex-row center item-user">
+                    <div class="flex-row center">
+                        <span class="t-yusei f-bold t-m t-center" > MODIFICAR ACTIVIDAD </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pageBody" class="flex-row center fH fW">
+                <!-- PAGINA 1 DEL MENU -->
+                <div id="pageBody1" class="flex-row center space-around fH fW pages" style="display: flex;">
+                    <div class="flex-column center flex-start fH m-t1">
+                        <span class="head-row  t-yusei t-b t-bold">GRUPOS</span>
+                        <input class="buscador" type="text" name="searchGrup" placeholder="buscador">
+                        <div class="listMenu" id="menu2">
+        
+                        </div>
+                    </div>
+        
+                    <div class="flex-column center fH m-t1">
+                        <button class="i-s icon arrow-left" id="left"></button>
+                        <br>
+                        <button class="i-s icon arrow-right" id="right"></button>
+                    </div>
+        
+                    <div class="flex-column center flex-start fH m-t1">
+                        <span class="head-row t-yusei t-b t-bold">ACTIVIDAD - GRUPOS</span>
+                        <input class="buscador" type="text" name="searchGrup" placeholder="buscador">
+                        <div class="listMenu" id="menu3"></div>
+                    </div>
+                </div>
+
+                <!-- PAGINA 2 DEL MENU -->
+                <div id="pageBody2" class="flex-row center flex-start fH pages" style="display:none;">
+
+                    <div class="flex-column center flex-start fH list-entregas">
+                        <div class="flex-column center fW">
+                            <span class="has-text t-yusei t-center t-m m-b1-2 m-t1-2">ENTREGAS </span>
+                        </div>
+                        <div id="list-items2" class="flex-column center flex-start list-items2 fH">
+        
+                            <div class="flex-row item-user">
+                                <div class="flex-row center">
+                                    <span class="t-yusei t-s">Oriol Fornos</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex-row item-user">
+                                <div class="flex-row center">
+                                    <span class="t-yusei t-s">Oriol Fornos</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex-row item-user">
+                                <div class="flex-row center">
+                                    <span class="t-yusei t-s">Oriol Fornos</span>
+                                </div>
+                            </div>
+        
+                            <div class="flex-row item-user">
+                                <div class="flex-row center">
+                                    <span class="t-yusei t-s">Oriol Fornos</span>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        
+                    </div>
+
+                    <div id="pageActivity" class="flex-column center flex-start fW fH">
+                        <div id="menu-preview" class="flex-row flex-start">
+                            <div class="item-preview mark-preview">
+                                <div class="flex-column center item-p-r">
+                                    <span class="t-yusei t-mini">1</span>
+                                </div>
+                                <div class="item-p-c">
+                                </div>
+                            </div>
+        
+                            <div class="item-preview">
+                                <div class="flex-column center item-p-r">
+                                    <span class="t-yusei t-mini">2</span>
+                                </div>
+                                <div class="item-p-i">
+                                </div>
+                            </div>
+        
+                            <div class="item-preview">
+                                <div class="flex-column center item-p-i">
+                                    <span class="t-yusei t-mini">3</span>
+                                </div>
+                                <div class="item-p-i">
+                                </div>
+                            </div>
+        
+                            <div class="item-preview">
+                                <div class="flex-column center item-p-r">
+                                    <span class="t-yusei t-mini">4</span>
+                                </div>
+                                <div class="item-p-c">
+                                </div>
+                            </div>
+        
+                            <div class="item-preview">
+                                <div class="flex-column center item-p-r">
+                                    <span class="t-yusei t-mini">5</span>
+                                </div>
+                                <div class="item-p-c">
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div id="bodyActivity" class="fW fH">
+                            <div class="flex-row center space-between p-1">
+                                <div id="prevQ" class="icon arrow-pointer-back i-m"></div>
+                                <span id="nombrePregunta" class="has-text t-yusei t-b t-bold">NOMBRE PREGUNTA</span>
+                                <div id="nextQ" class="icon arrow-pointer i-m"></div>
+                            </div>
+                            <div id="studentResponse">
+        
+                            </div>
+                        </div>
+                        <div id="teacherAnswer" class="flex-row center space-around fW">
+                            <div class="flex-row center">
+                                <div class="flex-row center">
+                                    <label for="correct" class="t-yusei f-bold t-m m-r1 has-text">CORRECTO</label>
+                                    <input type="radio" id="correct" name="teacherAnswer" value="correct">
+                                </div>
+                                <div class="flex-row center m-l5">
+                                    <label for="incorrect" class="t-yusei f-bold t-m m-r1 has-text">INCORRECTO</label>
+                                    <input type="radio" id="incorrect" name="teacherAnswer" value="incorrect">
+                                </div>
+                            </div>
+                            <button id="guardarActividad" class="flex-row space-between button item-m">
+                                <div class="flex-column center fW has-text" data-text="login-invitado">
+                                    <span class="has-text" data-text="">GUARDAR</span>
+                                </div>
+                                <div class="flex-column center"><i class="fas fa-save"></i></div>
+                            </button>
+        
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PAGINA 3 DEL MENU -->
+                <div id="pageBody3" class="flex-column center flex-start fH fW pages" style="display:none">
+                    <!-- BARRA DEL MENU DE CREAR ACTIVIDADES -->
+                    <div class="flex-row center flex-end fW">
+                        <select name="tipoPregunta" class="t-yusei" id="tipoPregunta">
+                            <option value="RESPUESTA_CORTA">TIPO A</option>
+                            <option value="RESPUESTA_ESCOGER">TIPO B</option>
+                            <option value="Grupo C">TIPO C</option>
+                        </select>
+            
+                        <div class="flex-column center time-activity">
+                            <span id="timerText" class="t-yusei" contenteditable="true">00:00</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CUERPO DE LA ACTIVIDAD -->
+                    <div class="flex-column center flex-start fH fW wrap">
+                        <div class="flex-row center flex-start wrap fW enunciado">
+                            <div class="flex-column center">
+                                <textarea id="idEnunciado">Enunciado</textarea>
+                            </div>
+                        </div>
+                        <div id="listActivities" class="flex-row center flex-start wrap fW">
+                            <div class="flex-row center multiopcion">
+                                <span class="header-start">A.</span>
+                                <textarea id="idRespuesta"></textarea>
+                                <button id="idDelete" class="buttonMini buttonDelete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                            <div class="flex-row center multiopcion">
+                                <span class="header-start">B.</span>
+                                <textarea id="idRespuesta"></textarea>
+                                <button id="idDelete" class="buttonMini buttonDelete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                            <div class="flex-row center multiopcion">
+                                <span class="header-start">C.</span>
+                                <textarea id="idRespuesta"></textarea>
+                                <button id="idDelete" class="buttonMini buttonDelete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                            <div class="flex-row center multiopcion">
+                                <button id="anadirRespuesta" class="buttonMini buttonAdd">
+                                    <i class="fas fa-folder-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BARRA INFERIOR -->
+                    <div class="flex-row center space-between fW">
+                        <div class="icon arrow-pointer-back i-b"></div>
+                        <div class="flex-row center">
+                            <button id="eliminar1" class="buttonMini buttonDelete"><i class="fas fa-trash-alt"></i></button>
+                            <button id="confirmar" class="flex-row space-between button">
+                                <div class="flex-column center fW has-text" data-text="login-invitado"></div>
+                                <div class="flex-column center"><i class="fas fa-check-square"></i></div>
+                            </button>
+                        </div>
+
+                        <div class="flex-row center flex-end">
+                            <button id="addNewPage" class="buttonMini buttonAdd">
+                                <i class="fas fa-folder-plus"></i>
+                            </button>
+                            <div class="icon arrow-pointer i-b"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="?type=js&page=gestionActividadesBase"></script>
+    <script src="?type=js&page=gestionCorreccionesActividades"></script>
+    <script src="?type=js&page=gestionActividadesv2"></script>
+    <script src="?type=js&page=general"></script>
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script> 
+</body>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+
+</html>

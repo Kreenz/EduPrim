@@ -1,0 +1,56 @@
+{
+    "respuestaCorta": {
+        "respuesta": ""
+    },
+    "respuestaEscoger": [
+        {
+            "enunciado": "",
+            "seleccionado": false
+        }
+    ],
+    "respuestaMultiopcion": [
+        {
+            "enunciado": "",
+            "seleccionado": false
+        }
+        
+    ],
+    "respuestaOperacionesMatematicas": [
+        {
+            "enunciado": "",
+            "resultado": ""
+        }
+    ],
+    "respuestaOrdenacion": [
+        {
+            "resultado": ""
+        }
+    ],
+    "respuestaArrastrarVacio": 
+    { 
+        "opciones":[
+            {"opcion":""},
+            {"opcion":""}
+        ],
+        "rel":""
+    },
+    "respuestaRelacionar": {
+        "izq": [
+            {
+                "enunciado": "bbbb"
+            }
+        ],
+        "der": [
+            {
+                "enunciado": "aaaa"
+            }
+        ],
+        "rel": []
+    },
+    "respuestasMapaConceptual": [
+        {
+            "enunciado": "1",
+            "cordenada": {"x":"","y":""}
+        }
+    ]
+}

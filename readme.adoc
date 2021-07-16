@@ -1,0 +1,582 @@
+= Planificació
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 08/12/2020 h| Planificació h| 
+h| Gestió Hores h| 
+|====
+
+== Setmana 1
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 15/12/2020 h| Planificació | Preparar l'arxiu de configuració de Vagrant
+h| Gestió Hores | 3 hores
+|====
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 22/12/2020 h| Planificació h| 
+h| Gestió Hores h| 
+|====
+
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 29/12/2020 h| Planificació h| 
+h| Gestió Hores h| 
+|====
+
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 05/01/2021 h| Planificació h| 
+h| Gestió Hores h| 
+|====
+
+
+== Setmana 2
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 12/01/2021 h| Planificació | Corretgir els errors amb l'arxiu de configuració de Vagrant i planificar les tasques per a la implementació de la aplicació
+h| Gestió Hores | Correcció: 1 hora & planificació: 2 hores
+|====
+
+
+== Setmana 3
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 19/01/2021 h| Planificació | 
+0. Preparar el entorno Vagrant para poder ejecutar aplicaciones con node.js + descargar de git la última
+   versión del programa. (Apache ya no es necesario, php tampoco)
+
+1. Unico punto de acceso a la aplicación:
+   Preparar el servidor con node.js para que pueda devolver una página de nuestra aplicación dependiendo 
+   de los parámetros que le pasemos. Deberá tener en cuenta que si la página no existe muestre una página
+   de error (En el futuro mostrará la home del usuario o el login en el caso de no tener la sesión iniciada).
+
+2. Crear el script SQL de la base de datos
+
+3. Documentarse de como hacer una conexión con SQL desde node.js y aplicarlo al proyecto (Además hay que dejar
+   la documentación que encontremos en la wiki de nuestro git).
+
+4. Preparar una página de inicio de sesión y placeholders para las homes de los 3 usuarios posibles (Si hay tiempo
+   o a alguien le apetece también podemos hacer las páginas de home como tal).
+
+5. Conseguir que un usuario pueda iniciar sesión y que le salga su home correspondiente (De momento usaremos
+   usuarios creados desde mysql/mariadb directamente).
+h| Gestió Hores | 
+0. Marc: 1 hora reunión para repartir las tareas, 2 horas buscando informacion y documentandome, 1 hora implementacion y solucion de errores
+
+1. Diego: 1 hora reunión para repartir las tareas, 3 horas implementación del servidor, 1 hora redacción de la documentación para utilitzarlo, 20 minutos aplicar el conector a la BBDD en el servidor  
+
+2. Pablo: 1 hora reunión para repartir las tareas, 1 hora para saber como hacerlo, 2 horas de creación tablas y foreign key    
+
+3. Gerard: 1 hora de reunión para repartir las tareas, 2/2:30 horas mirando documentación y tutoriales de como hacer la conexión y que se necesita para hacerlo. 30 minutos para hacer la conexión y 30 minutos más para la documentación en la wiki
+
+4. Oriol: 1 hora reunión para repartir las tareas, 1 hora y 30 minutos para hacer la pagina correspondiente al login  
+
+5.  Oscar: 1 hora reunión para repartir las tareas, 1 hora leyendo acerca del funcionamiento de node.js, 1 hora aprendiendo que librerias utilizar para esta funcion 1 hora implementación
+|====
+
+
+== Setmana 4
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 26/01/2021 h| Planificació |
+
+De la semana pasada:
+
+0. Conseguir que un usuario pueda iniciar sesión y que le salga su home correspondiente (De momento usaremos
+   usuarios creados desde mysql/mariadb directamente).
+  
+Esta semana:
+  
+1. Hacer pequeñas mejoras en la maquina Vagrant:  
+
+  1.1. Que tenga dos scripts, uno que se ejecute solo la primera vez que se hace un vagrant up y otro que se  
+  
+       ejecute siempre, en el primero estaran todos los apt install, clone etc... y en el segundo solo se hará  
+       un pull para actualizar el código  
+       
+  1.2. Que se pueda acceder desde la máquina host a la máquina virtual  
+  
+  1.3. Instalación de mysql o mariadb  
+  
+  1.4. Preparar los archivos necesarios para hacer la conexión sql desde el servidor  
+  
+      _Nota_: estos cambios estaría bien hacerlos entre todos, para que veamos como funciona y aprender más sobre  
+              Vagrant.  
+  
+  
+2. Páginas HTML. (Sin funcionalidades)  
+
+  2.1. las 3 páginas de home  
+  
+  2.2. Página de listado de usuarios  
+  
+  2.3. Página de registro de usuarios/modificación de usuarios  
+  
+  2.4. Página de listado de grupos/gestionar datos de grupo/asignar usuario a grupo  
+  
+  2.5. Página de gestion Actividades  
+  
+  2.6. Página de Pregunta Respuesta corta  
+  
+  
+3. Gestión de usuarios a través de la aplicación (solo admin).  
+
+  3.1. Registro de usuarios (Importante, la password no la podremos guardar como texto plano en la BBDD)  
+  
+  3.2. Gestión de usuarios(modificación y eliminación)  
+  
+  
+4. Gestión de grupos dentro de la aplicación(admin o profesor)  
+
+  4.1. Creación de grupos  
+  
+  4.2. Modificación de grupos/eliminación de grupos  
+  
+  4.3. Añadir usuario a grupo  
+  
+  4.4. Eliminar usuario de grupo  
+  
+
+5. Actividad  
+
+  5.1 Creación de actividad  
+  
+  5.2 Añadir pregunta a actividad (solo respuesta corta de momento)  
+  
+    5.2.1 Añadir Enunciado  
+    
+    5.2.2 Añadir respuesta(s) correcta(s) (opcional)  
+    
+  5.3 Eliminar/Modificar pregunta de actividad  
+  
+
+6. Mejorar el servidor  
+
+  6.1. Mejorar la seguridad, que no se puedan hacer consultas sql desde una peticion GET  
+  
+  6.2. Preparar el servidor para poder hacer todas las consultas necesarias de la aplicacion sin pasar consultas sql, solo parámetros  
+  
+
+
+h| Gestió Hores | 
+0. Oscar: Investigación libreria "Express" y pruebas de creación de login y Registro: 6 Horas
+
+1. Marc: 1h de reunion, 7 horas cambios de fichero y codigo vagrant, 6h de cambios y intento de conectar mysql con nodejs por problema con contraseña root.
+
+2. Oriol: 1h reunion, 9 horas y media para hacer paginas web, modales y algunos extras (css, html)
+
+3. Oriol: 6 horas para crear las funciones, verificarlas, hacer funcional el HTML correspondiente y los comentarios del codigo
+
+4. Pablo: 1h reunion, 3h instalación y busqueda de información uso node.js, 18h implementación y corrección errores(2h por unas comillas y otra 1.30h por unos parentesis -.- )
+
+5. Gerard: 1 hora de reunión, 1 hora de planificación y 30 minutos de intento de ejecución de las ideas
+
+6. Diego: 1 hora reunión para repartir tareas y revisar que ha hecho cada uno, 6 horas creación del conector a la BBDD desde el servidor y corrección de fallos, 3 horas soporte de varios idiomas,
+2 horas documentación en la wiki del proyecto, 2.5 horas correcciones Vagrant
+
+|====
+
+
+== Setmana 5
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 02/02/2021 h| Planificació |
+
+De la semana pasada:
+
+-1. Conseguir que un usuario pueda iniciar sesión y que le salga su home correspondiente (De momento usaremos
+   usuarios creados desde mysql/mariadb directamente). (2 semanas de retraso)
+
+0. Actividad
+
+  0.1 Creación de actividad
+  
+  0.2 Añadir pregunta a actividad (solo respuesta corta de momento)
+  
+    0.2.1 Añadir Enunciado
+    
+    0.2.2 Añadir respuesta(s) correcta(s) (opcional)
+    
+  0.3 Eliminar/Modificar pregunta de actividad
+  
+
+Esta semana:
+
+General. Testear lo que hemos hecho la semana pasada y corregir los posibles errores que haya.
+
+1. Actividades Alumno
+
+  1.1 Ver listado de actividades asignadas a su grupo
+  
+  1.2 Acceder a una actividad (por la lista y por código)
+  
+  1.3 Realizar la actividad y guardar las respuestas en la BBDD
+  
+
+2. Revisión de Actividades
+
+  2.1 Poder ver por parte del profesor una lista de entregas al clicar en una actividad.
+  
+  2.2 Poder revisar la corrección de esa entrega (para preguntas sin autocorrección).
+  
+  2.3 Control de si se puede ver la puntuación de las entregas de una actividad.
+  
+  2.4 [Opcional de momento] generar estadísticas de las actividades mostrando % de aciertos en cada pregunta, tiempo medio para acabar las actividades...
+  
+
+3. Páginas HTML:  
+
+  3.1 Página revisión de entrega (2.2)  
+
+  3.2 Página pregunta respuesta corta alumno (1.2)  
+
+  3.3 [opcional si hay tiempo] Página de estadísticas (2.4)  
+
+  3.4 Respuesta mapa conceptual (vista profesor)  
+
+  3.4 Respuesta Multiopción (vista profesor)  
+
+  3.5 Respuesta arrastrar a vacío (vista profesor)  
+  
+  
+4. Acceso con PDO a la BBDD.
+
+
+h| Gestió Hores |
+
+-1: Oriol: 1h reunion, 1h 30m en preparar el sistema de LogIn / LogOut + hacer algo navegable la web desde el logIn.
+
+0: Marc: 1h reunion, 3h documentarme sobre como funcionan los accesos a las bases de datos con el servidor, 3h busqueda de la solucion de el problema de que en el servidor no dejaba desde terminal utilizar MariaDB con mysql funciona y si utilizas Mysql Workbench funciona (opcional) + 10h creacion de la primera version inicial de la pagina de Actividades + creacion/eliminacion de Actividades + creacion de Preguntas solo Respuestas cortas de momento i pequeños cambios en la base de datos i vagrant
+
+1: Diego: 2 horas listado de actividades del usuario. 5 horas realizar actividad por parte del alumno.  
+
+2: Oriol: 10h preparando html y adaptando el codigo a la nueva base (la idea que teniamos de como hacerlo antes no se podia hacer) + algunas funciones para hacer el resto del codigo
+
+2: Pablo: 1h reunion, 5h en arreglar problemas y cambiar las consultas sql (cambiar el como se hacen), 5h Planteamiento, creacion y testeos de consultas para actividades, 
+
+3: Gerard: 1 hora reunión, 2 horas en la preparación del entorno de trabajo servidor, 2 horas de investigación de los ficheros html y css ya creados. 4 horas de creación de los ficheros html y css (uno de más a causa de un desliz)
+
+3.3, 3.4: Oscar: 1 hora reunión, 1 hora revisión del CSS actual y 2 horas implementación nuevos htmls, y nuevos css.
+
+4: Diego: 8 horas pensar e implementar el acceso a la BBDD con PDO, 2 horas creación de la documentación. 1 hora correcciones en el conector. 3 horas implementacion de guardado de variables de sesion  
+
+|====
+
+
+== Setmana 6
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 09/02/2021 h| Planificació |
+
+De la semana pasada:
+
+0. Páginas HTML:
+
+  0.1 Página de estadísticas (2.4)
+  
+  0.2 Respuesta mapa conceptual (vista profesor)
+  
+  0.3 Respuesta Multiopción (vista profesor)
+  
+  0.4 Respuesta arrastrar a vacío (vista profesor)
+  
+
+De esta semana:
+
+General. Correcciones de errores en el código ya generado
+
+
+1. Rediseñar la BBDD
+
+  1.1 Hacer los cambios en el código necesarios para adaptarse a la BBDD
+  
+
+2. Páginas HTML 
+
+  2.1 Todos los tipos de pregunta alumno
+  
+  2.1 Todos los tipos de pregunta profesor
+  
+
+3. Si sobra tiempo después de lo de la BBDD:
+
+  3.1 Implementar pregunta escoger (profesor)
+  
+  3.1 Implementar pregunta escoger (alumno)
+  
+  3.1 Implementar pregunta multiopcion (profesor)
+  
+  3.1 Implementar pregunta multiopcion (alumno)
+  
+
+h| Gestió Hores | 
+
+0. -> .2, .3, .4 Oriol: 40m creando las secciones de los htmls correspondientes dentro de gestionarActividades + 2h de implementacion de una demo de como seria el funcionamiento de arrastrar a vacio
+
+General. Diego: 3 horas corrección y generalización de la realiazación de una actividad por parte del usuario. ? (no las he contado) horas soporte en tareas de otros compañeros del grupo.
+
+General. Oriol: 3h 40m correcion del antiguo login + lista de usuarios + registro de usuarios con contraseña encriptada en el servidor con bcrypt (nuevo modulo) + updateUsuario (falta testing), 2h de implementar algo de responsive en gestionarActividades y terminar el apartado de respuesta corta vista profesor
+         
+General. Pablo: 1h correccion de gestionGrupos y traduccion.
+
+General. Marc: 3h correccion de errores de conexion con base de datos nueva. 5h comprension de la documentacion y implementacion y cambios de gestionar los tipos de actividades con json. 2h comprobaciones de todo tipo de respuestas y salida de vuelta de valores de la base de datos (falta crear bien las paginas de creacion del professor)
+
+1.  Diego: 6 horas rediseño/simplificación de la BBDD y diseño de los objetos de tipo respuesta además del acceso a plantillas de estos objetos desde el servidor. 20 min documentación.
+
+
+2. Pablo: 2h Diseño/Produccion de la pagina estadisticas. 2h buscando informacion sobre estadisticas(Chart.js) 5h Implementando Chart.js.
+
+
+3.
+
+
+
+|====
+
+
+== Setmana 7
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 16/02/2021 h| Planificació |
+
+1. Hacer todos los HTML + CSS de creacion de actividad  
+
+2. Hacer todos los HTML + CSS de realizar actividad  
+
+3. Preparar server para poder recuperar plantillas HTML  
+
+4. Implementaciones de Actividad
+
+  4.1 Implementar pregunta escoger (profesor)
+  
+  4.2 Implementar pregunta escoger (alumno)
+  
+  4.3 Implementar pregunta multiopcion (profesor)
+  
+  4.4 Implementar pregunta multiopcion (alumno)
+  
+
+h| Gestió Hores | 
+
+1. Marc: 5h acabar de hacer plantillas restantes en HTML + CSS de professor, 4h guardar las plantillas en un json i atraves de un seleccionador restructurar el html de la vision de cracion de profesor, 1h de prubas i cambios de informacion y de guardar bien valores(falta terminarlo)
+
+2. Diego: 6 horas acabar todas las plantillas HTML + su CSS, 2 horas adaptar la implementación de respuestaCorta a la última version del servidor
+
+3. Pablo 3h en hacer la función POST del servidor. 1h Correccion de errores, 6h implementando respuesta escoger(en proceso)
+
+4 -> .5 Oriol: 40m arreglar y mejorar el arrastre del tipo pregunta Arrastrar
+
+General Oriol: 4h arreglando tanto el update como el registro (los dos funcionan) + el filtro de busqueda y los tests para evitar possibles errores
+
+|====
+
+
+== Setmana 8
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 23/02/2021 h| Planificació | 
+1. Implementación de los tipos de respuesta del alumno + Generalización  
+
+  1.1 Respuesta Arrastrar a Vacío
+  
+  1.2 Respuesta Corta
+  
+  1.3 Respuesta Escoger
+  
+  1.4 Respuesta Multiopcion
+  
+  1.5 Respuesta Relacionar
+  
+2. Implementación de los tipos de respuesta del profesor
+
+
+h| Gestió Hores | 
+
+General: Diego 2 horas generalización de la gestion de actividad de alumno
+
+1.1/1.4 Pablo: 3h planteando la actividad, 2h correccion errores 5h haciendo la actividad
+
+1.2 Diego 5 minutos. Distribución según la nueva generalización
+
+1.3 3h en implementación de la actividad y corrección de errores.
+
+1.4 3h en implementación de la actividad y corrección de errores.
+
+1.5 Diego 5,5 Horas. Rediseño de la forma de gestionar la respuesta, implementación del canvas WIP
+
+2. Marc: 30 min de poner las plantillas de html en variables en un json en una sola linia por variable + 4h30min creacion de botones de creacion de mas etiquetas para cada tipo de respuesta + 3h de insercion de valores de las actividades de profesor en SQL atraves de el creador en html.
+
+2. Oriol: 7 horas. finalización arrastrar vacio(queda subir datos y sacarlos) + boton eliminar + cambios en la plantilla json
+
+|====
+
+
+== Setmana 9
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 02/03/2021 h| Planificació | 
+1. Implementación de los tipos de respuesta del alumno + Generalización  
+
+2. Implementación de los tipos de respuesta del profesor
+h| Gestió Hores |
+
+1. Diego 12 horas: Funcionalidad completa en PC + soporte para pantallas tactiles para la pregunta de relacionar
+
+1. Diego 2 horas: Implementación Respuesta Operaciones Matemáticas Alumno
+
+1. Pablo: 8h implementando arrastrar al vacio. 2h corrección errores puntuales.
+
+2. Marc 11h Hacer pequeña funcion de nombre Anonimo con backend y insercion de si es true o false la respuesta, carga y seleccion respuestas correctas de actividades de Escojer y Multiopcion (falta retocar) y insercion de contador en la base de datos tipo 00:00
+
+3. Oriol: 13h implementacion funcionamiento pestaña modificacion professor + borrar res + modificación añadir res + cambiar de pregunta + pop up en caso de que no haya actividad seleccionada + moverse entre preguntas de una actividad 
+
+|====
+
+
+== Setmana 10
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 09/03/2021 h| Planificació | 
+1. Todos los tipos de respuesta del profesor exepto mapa conceptual + cambiar el diseño de actividad profesor  
+
+2. Todas las preguntas de alumno excepto mapa conceptual  
+
+3. Opción de subir imagenes al servidor  
+
+4. Bloqueo de páginas a las que se puede acceder dependiendo del tipo de usuario.
+
+h| Gestió Hores | 
+
+1. Marc: 6 h de planteamineto y intento de hacer Mapa conceptual(lo emos dejado de lado de momento) y acabar los demas tipos de actividad
+
+2. Pablo: 4h buscando informacion y documentando sobre KineticJS 6h prototipo de uso de arrastrarVacio
+
+3. Diego 6 horas: implementación en el servidor para poder subir imagenes, arreglar problemas del servidor y puesta punto del acceso a las actividades por parte del alumno
+
+4. Oriol: 2h implementacion bloqueo de paginas para usuarios no permitidos
+
+General. Oriol: 3h arreglando bugs y mejorando el codigo
+
+
+
+|====
+
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 16/03/2021 h| Planificació ^.^h| RECUPERACIONS
+h| Gestió Hores h|
+|====
+
+
+== Setmana 11
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 23/03/2021 h| Planificació |
+1. Respuesta Arrastrar a Vacío    
+2. Respuesta Ordenación     
+
+3. Correccion del diseño de actividad profesor     
+
+4. Estadisticas     
+  - Correcciones (cualquier pregunta puede ser revisada y cambiada la correccion)     
+  - Mostrar datos de una actividad     
+    - Media de grupo     
+    - Porcentajes de respuesta fallida por pregunta     
+    - Otros datos que queramos mostrar     
+
+5. Import/Export de actividades      
+
+6. Mapa conceptual en profesor y alumno (Opcional)      
+h| Gestió Hores |     
+
+1. Pablo: Implementación Mobile de ArrastrarVacio asi como en ordenador 8h
+
+3. Marc: 11h responsive de professor (opcional o mas adelante seguir con responsive de movil o vertical)
+
+General: Oriol: 7h editando y cambiando la funcionalidad para que sea mas accesbile + barrra de estado    
+4. Oriol: 4h haciendo consultas SQL + mas planteado la estructura de los datos + comprobar que funciona.  
+
+5. Diego: 4 horas Import/Export de actividades, 3 horas acceso mediante codigo a actividad
+|====
+
+
+== Festiu
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 30/03/2021 h| Planificació h| 
+h| Gestió Hores h| 
+|====
+
+
+== Setmana 12
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 06/04/2021 h| Planificació | 
+h| Gestió Hores | 
+Marc: 7h Responsive total de la pagina + ajuestes de css y html
+
+Diego: Fix de Vagrant 2 horas, Gestion del idioma del usuario 3 horas, 1 hora acabar una actividad.
+|====
+
+
+== Setmana 13
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 13/04/2021 h| Planificació | Correcciones y Puesta a punto de la aplicación
+h| Gestió Hores | 
+
+Diego: 3 horas respuestaRelacionar completamente funcional con aleatoriedad, 20min fix en el conector SQL, 5 horas idiomas diferentes páginas y implementación del tiempo por pregunta de actividadAlumno
+
+Marc: 8 horas hacer funcional correciones i pequeñas modificaciones visuales en professor.
+|====
+
+
+== Setmana 14
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 20/04/2021 h| Planificació | Entregas Finales y Correcciones
+h| Gestió Hores |
+
+Diego: 16 horas correciones varias + video + manual instalación + alguna parte de la memória
+|====
+
+
+== Setmana 15
+
+[cols="1,1,4"]
+|====
+.2+^.^h| 27/04/2021 h| Planificació ^.^h| PRESENTACIÓ FINAL PROJECTE
+h| Gestió Hores h| 
+|====
+
+

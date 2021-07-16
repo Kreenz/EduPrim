@@ -1,0 +1,107 @@
+html > *{
+    font-family: 'YuseiMagic' !important;
+}
+
+body{
+    background-image: url(?type=res&file=background-profe.jpg&dir=imgs/) !important;
+}
+
+div.flex-row.center.filters.space-between > span.chalk.t-b, div.flex-row.center > label.chalk{
+    font-size: 4vh;
+}
+
+select#tipoCuenta{
+    height: 5vh;
+    width: 23vw;
+}
+
+.filters{
+    height: 14vh !important;
+    background: #eeeeee !important;
+    border: 2px solid white !important;
+    border-radius: 5px !important;
+}
+
+.list-items{
+    margin-left: 1vw;
+}
+
+.filters > span {
+    padding: 2vh !important;
+    border: 2px solid white !important;
+}
+
+#body > div:nth-child(1) > input {
+    margin-right: 4.5vh !important;
+}
+
+.list > div:nth-child(1){
+    height: 7.5vh !important;
+    width: 22.4vw !important;
+}
+
+.menu-items > div{
+    padding: 0 !important;
+    height: 100% !important;
+}
+
+.t-s {
+    font-size: 2.2vh !important;
+}
+
+.item-user{
+    height: 8vh !important;
+    width: 21.6vw !important;
+}
+
+input::placeholder{
+    font-size: 4vh;
+}
+
+input {
+    height: 8vh ;
+    width: 22vw ;
+    font-size: 4vh ;
+}
+
+label.label{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    height: 5.8vh;
+    width: 17vw;
+    font-size: 3vh;
+}
+
+form.flex-row.center{
+    align-items: unset;
+    justify-content: center;
+}
+
+form.flex-row.reforma input {
+    height: 5vh !important;
+    width: 17vw !important;
+    font-size: 3vh !important;
+    margin-bottom: 3vh !important;
+    margin-top: 0.3vh;
+}
+
+#search{
+    height: 3.3vw;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form{
+    margin-top: 2vh;
+    overflow-y: hidden !important;
+}
+
+.list > div:nth-child(1) {
+    height: 50px;
+    width: 23.5vw !important;
+    margin-left: 1.2vw !important;
+    /* background-color: white; */
+    border: 2px solid white !important;
+    margin-bottom: 10px;
+
+}

@@ -1,0 +1,122 @@
+body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-image: url('?type=res&file=fondo-clase.jpg&dir=imgs/');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#clock{
+    background-image: url('?type=res&file=full_clock.png&dir=imgs/');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    margin-right: 5px;
+    width: 90px;
+    height: 90px;
+}
+
+#pizarra {
+
+    background-color: #4f6853;
+    border: 5px solid #8f4a1b;
+
+    width: 55%;
+    height: 50%;
+
+}
+
+.span { text-align: center; }
+
+#enunciat {
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    font-size: 45px;
+
+    font-family: Gobsmacked;
+    cursor: default;
+
+}
+
+#respuestas {
+
+    margin-top: 5px;
+
+    width: 55%;
+    height: 40%;
+
+}
+
+.ans-row {
+
+    width: 100%;
+    height: 50%;
+
+}
+
+.ans {
+
+    width: 45%;
+    height: 65%;
+
+    margin: 3%;
+
+    background-color: #4f6853;
+    border: 3px solid #8f4a1b;
+
+}
+
+.before-ans {
+
+    height: 100%;
+    width: 23%;
+
+    border-right: 3px solid #8f4a1b;
+
+    background-color: #FFFF99;
+    font-size: 40px;
+    font-family: YuseiMagic;
+    cursor: default;
+
+}
+
+#A { color: #33FFFF; }
+#B { color: #FF826F; }
+#C { color: #A5A5F3; }
+#D { color: #CC66CC; }
+
+.after-ans {
+
+    height: 100%;
+    width: 76%;
+
+    color: white;
+    font-size: 30px;
+
+    font-family: YuseiMagic;
+    cursor: default;
+
+}
+
+.button {
+
+    background-color: #ff99ff;
+    margin-bottom: 10px;
+
+}
+
+#imglapiz {
+
+    background-image: url('?type=res&file=pencil-tip.png&dir=imgs/');
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Home</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-homeAlumno">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+
+
+    <script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+    <script src="?type=js&page=home_alumno"></script>
+    <script src="?type=js&page=estadisticasfunct"></script>
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script>
+</head>
+
+<body class="flex-column fW fH">
+    <section id="body" class="flex-row center fH">
+        <!-- menu navegacion + selector de actividades -->
+        <div class="flex-column center flex-start fH">
+            <!-- barra de busqueda -->
+            <div class="flex-row center fW search-bar flex-start">
+                <i class="icon-search"></i>
+                <input id="search" type="text" class="has-placeholder" data-placeholder="general-buscar">
+            </div>
+
+            <!-- lista de actividades -->
+            <div id="act-list" class="flex-column center flex-start">
+
+            </div>
+        </div>
+
+        <!-- Preview de la actividad + codigo de entrada a actividad -->
+        <div class="flex-column center fW fH space-around">
+            <!-- preview de la actividad -->
+            <div class="flex-column space-between board-preview">
+                <div id="preview-target" class="flex-column center flex-start">
+                    <span class="t-yusei t-b has-text" data-text="homeAlumno-noActividad"></span>
+                </div>
+                <div class="flex-row center space-between">
+                    <div class="flex-row center space-between">
+                        <span id="btn-responder-seleccion" class='t-yusei t-m has-text' data-text="homeAlumno-responderActividad"></span>
+                    </div>
+                    <div class="flex-row center space-between">
+                        <span id="btn-resultados" class='t-yusei t-m has-text' data-text="homeAlumno-resultados"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Codigo de entrada -->
+            <article class="flex-row center">
+                <input id="codigo" class="codigo has-placeholder" type="text" name="codigo" data-placeholder="general-codigo">
+                <div id="btn-responder-codigo" class="submitCodigo"></div>
+            </article>
+        </div>
+    </section>
+    <div class="logOut">
+        <form id="f-logout" method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="general-logOut"></div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

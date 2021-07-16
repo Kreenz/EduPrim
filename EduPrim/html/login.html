@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - LogIn</title>
+    
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-login">
+    <link rel="stylesheet" href="?type=css&page=styles">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <!--<link rel="stylesheet" href="?type=css&page=styles">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+</head>
+<body class="flex-column fW fH">
+    <span class="flex-row center t-jelly t-g"><span class="pink">E</span><span class="green">d</span><span class="yellow">u</span ><span class="blue">P</span><span class="pink">r</span><span class="green">i</span><span class="yellow">m</span></span>
+    <section id="body" class="flex-column center fH">
+        <div class="flex-row center space-around">
+            <!-- Entrar codigo de actividad -->
+            <article class="flex-row center fH">
+                <input id="codigo" class="codigo has-placeholder" type="text" name="codigo" data-placeholder="general-codigo">
+                <div class="submitCodigo m-r5" id="submitCodigo"></div>
+            </article>
+
+            <article class="flex-column center modal">
+
+                <!-- Formulario de login -->
+                <form name="login" action="auth" class="flex-column center" method="POST">
+                    <input class="has-placeholder" type="text" name="username" data-placeholder="login-usuario">
+                    <div id="passInput" class="flex-row center flex-start">
+                        <input id="passLogin" class="has-placeholder" type="password" name="password" data-placeholder="login-contrasena">
+                        <i id="eyeIcon" class="fas fa-eye t-b"></i>
+                    </div>
+                    
+            
+                    <button name="login" type="submit" id="initSesion" class="flex-row space-between button">
+                        <div class="flex-column center fW"><span class="has-text" data-text="login-iniciasesion"></span></div>
+                        <div class="flex-column center"> <i class="fas fa-sign-in-alt"></i></div>
+                    </button>
+                </form>
+
+                <!-- Entrar como anonimo (ya no) -->
+                <!--button id="initAnon" class="flex-row space-between button">
+                    <div class="flex-column center fW has-text" data-text="login-invitado"></div>
+                    <div class="flex-column center"><i class="fas fa-user-secret"></i></div>
+                </button-->
+            </article>
+        </div>
+
+        <div id="flag-box" class="flex-row center">
+            <p class="has-text" data-text="login-idioma">Idioma</p>
+            <img id="es" class="flag" src="/?type=res&file=es.png&dir=banderas/">
+            <img id="cat" class="flag" src="/?type=res&file=cat.png&dir=banderas/">
+            <img id="en" class="flag" src="/?type=res&file=en.png&dir=banderas/">
+        </div>
+
+    </section>
+</body>
+<script src="?type=js&page=login"></script>
+<script src="?type=js&page=client_connector"></script>
+<script src="?type=js&page=textPopulator"></script>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+</html>

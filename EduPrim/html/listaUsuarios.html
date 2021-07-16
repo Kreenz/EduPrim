@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduPrim - Lista Usuarios</title>
+
+        
+        <link rel="stylesheet" href="?type=css&page=style-fonts">
+        <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+        <link rel="stylesheet" href="?type=css&page=style-gestionUsuarios">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="?type=css&page=style-registro">
+        <link rel="stylesheet" href="?type=css&page=style-general">
+        <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+    </head>
+    <body class="flex-column fW fHm">
+        <div id="goBack"></div>
+        
+        <div id="popUp"> 
+            <div class="flex-column center flex-start">
+                <div class="mark fW flex-row flex-end">
+                    <i id="closePopUp" class="fas fa-window-close">
+                        <div></div>
+                    </i>
+                </div>
+                <div id="popUpContent" class="flex-column center flex-start">
+                </div>
+            </div>
+        </div>
+        <section id="body" class="flex-column center flex-start fHm fW">
+            <div class="flex-row center fW">
+
+                <div class="flex-row center">
+                    <input id="search" class="buscador has-placeholder" type="text" name="searchGrup" data-placeholder="listaUsuarios-buscador">
+                    <div id="searchButton" class="flex-column center"><i class="fas fa-search t-m"></i></div>
+                </div>
+
+                <div class="flex-row center filters space-between">
+                    <span class='t-yusei t-b has-text' data-text="listaUsuarios-filtros">Filtrar lista por: </span>
+                    <div class="flex-row center">
+                        <label class="t-b has-text" for="tipoCuenta" data-text="listaUsuarios-tipoCuenta">Tipo de cuenta</label>
+                        <select class='t-yusei t-m' name="tipoCuenta" id="tipoCuenta">
+                            <option class="has-text" value="todos" data-text="listaUsuarios-todos">TODOS</option>
+                            <option class="has-text" value="PRF" data-text="listaUsuarios-pro">Professor</option>
+                            <option class="has-text" value="ALU" data-text="listaUsuarios-alu">Alumno</option>
+                            <option class="has-text" value="ADM" data-text="listaUsuarios-adm">Administrador</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-row fW fH">
+                <div class="flex-column center flex-start list">
+                    <div class="flex-row center menu-items">
+                        <div id="addItem" class="flex-column center">
+                            <span class="t-yusei t-s has-text" data-text="listaUsuarios-anadir">AÑADIR</span>
+                        </div>
+                        <div id="deleteItem" class="flex-column center">
+                            <span class="t-yusei t-s has-text" data-text="listaUsuarios-borrar">BORRAR</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-column center flex-start list-items fH"> <!-- no estoy seguro de que hace esto, la verdad -->
+                        <div class="flex-row item-user">
+                            <i class="icon-activity"></i>
+                            <div class="flex-row center">
+                                <span class="t-yusei t-s">ORIOL FORNOS</span>
+                            </div>
+                        </div>
+                        <div class="flex-row item-user">
+                            <i class="icon-activity"></i>
+                            <div class="flex-row center">
+                                <span class="t-yusei t-s">DIEGO MUÑOZ</span>
+                            </div>
+                        </div>
+                        <div class="flex-row item-user">
+                            <i class="icon-activity"></i>
+                            <div class="flex-row center">
+                                <span class="t-yusei t-s">PABLO CEBALLOS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="/register" method="POST" class="flex-row reforma" name="registrar">
+                    <div class="flex-column center flex-start fH ">
+                        <label class="t-yusei label has-text" for="nombre" data-text="listaUsuarios-nombre">NOMBRE</label>
+                        <label class="t-yusei label has-text" for="apellidos" data-text="listaUsuarios-apellido">APELLIDOS</label>
+                        <label class="t-yusei label has-text" for="password" data-text="listaUsuarios-pass">CONTRASEÑA</label>
+                        <label class="t-yusei label has-text" for="confirmPassword" data-text="listaUsuarios-repass">REPETIR PASS</label>
+                        <label class="t-yusei label has-text" for="tipoCuenta" data-text="listaUsuarios-tipo">TIPO</label>
+                        <label class="t-yusei label has-text" for="grupo" data-text="listaUsuarios-grupo">GRUPO</label>
+                    </div>
+    
+                    
+                    <div class="flex-column center flex-start fH">
+
+                        <!-- ID Usuario -->
+                        <input type="number" name="userid" class="hidden"> 
+
+                        <!-- Nombre -->
+                        <input class="has-placeholder" type="text" name="nombre" data-placeholder="listaUsuarios-nombre">
+    
+                        <!-- Apellidos -->
+                        <input class="has-placeholder" type="text" name="apellidos" data-placeholder="listaUsuarios-apellido">    
+                        
+                        <!-- Contraseña -->
+                        <input class="has-placeholder" type="password" name="password" data-placeholder="listaUsuarios-pass">    
+                        
+                        <!-- Repetir contraseña -->
+                        <input class="has-placeholder" type="password" name="confirmPassword" data-placeholder="listaUsuarios-repass">    
+    
+                        <!-- Selector de tipo de cuenta  -->
+                        <select name="tipoCuenta" class="t-yusei t-m" id="tipoCuenta">
+                            <option class="has-text" value="PRF" data-text="listaUsuarios-pro">Professor</option>
+                            <option class="has-text" value="ALU" data-text="listaUsuarios-alu">Alumno</option>
+                            <option class="has-text" value="ADM" data-text="listaUsuarios-adm">Administrador</option>
+                        </select>
+                        
+                        <button type="submit" id="grupo" class="flex-row space-between button">
+                            <div class="flex-column center fW has-text t-yusei t-m has-text" data-text="listaUsuarios-cgrupo">CAMBIAR GRUPO</div>
+                            <div class="flex-column center"> <i class="fas fa-directions"></i></div>
+                        </button>
+                        <!-- Selector de grupo  
+                        <select name="grupo" id="grupo">
+                            <option value="Grupo A">Grupo A</option>
+                            <option value="Grupo B">Grupo B</option>
+                            <option value="Grupo C">Grupo C</option>
+                        </select> -->
+
+                        
+    
+                        <button type="submit" id="registrarse" class="flex-row space-between button">
+                            <div id="textoId" class="flex-column center fW has-text" data-text="listaUsuarios-regist">REGISTRARSE</div>
+                            <div class="flex-column center"> <i class="fas fa-save"></i></div>
+                        </button>
+                    </div>
+    
+                </form>
+            </div>
+        </section>
+        <div class="logOut">
+            <form method="POST" action="/logOut">
+                <button id="logOut" type="submit" class="flex-row space-between button">
+                    <div class="flex-column center fW has-text" data-text="general-logOut">CERRAR SESSIÓN</div>
+                    <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+                </button>
+            </form>
+        </div>
+        <script src="?type=js&page=client_connector"></script>
+        <script src="?type=js&page=textPopulator"></script>
+        <script src="?type=js&page=general"></script>
+        <script src="?type=js&page=gestionUsuarios"></script>
+        <script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+

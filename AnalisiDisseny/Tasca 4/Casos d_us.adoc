@@ -1,0 +1,33 @@
+[options="header"]
+[cols="20%,30%,80%,20%"]
+|======
+|CU | Nom | Descripció | Req.
+|UC1 | Iniciar sessió | Omplir les credencials en el forumlari d'access | R1.1, R5
+|UC2 | Donar de baixa a un usuari | Seleccionar el usuari a donar de baixa |R5,R6
+|UC3 | Donar d'alta a un ususari | Omplir les dades del usuari a donar d'alta |R5,R6
+|UC4 | Modificar dades d'un usuari | Seleccionar el usuari a modificar i editar les seves dades |R5,R6
+|UC5 | Crear activitat | Seleccionar el tipus de diseny i omplir la activitat |R4, R4.2, R4.3, R4.4, R4.5, R5
+|UC6 | Eliminar Activitat | Elimina la activitat desitjada per el usuari |R4, R5
+|UC7 | Importar una activitat | Importa la activitat seleccionada per el usuari |R4.5, R5
+|UC8 | Exportar una activitat | Exporta la activitat seleccionada per el usuari |R4.6, R5
+|UC9 | Accedir a una activitat | Introdueix un codi en la pagina per accedir a la activitat | R1, R1.2, R2, R3, R3.1, R3.2, R5
+|UC10 | Llançar una activitat | Escull la activitat que es vol fer |R4.1, R5
+|UC11 | Fer una activitat | Omplir les dades necesaries per fer la activitat |R1, R1.2, R2, R3, R3.1, R3.2, R5
+|UC12 | Veure resultats | Veure la *puntuacio* treta en la activitat, la qual no sera numerica|R1, R1.2, R2, R3.1, R3.2, R4.7, R5
+|UC13 | Gestionar incidencia | Es mostra un error per pantalla que sera informat al administrador per tal de solucionar-lo |R6, R5
+|UC14 | Veure estadistiques d'usuaris | Veure les activitats fetes, les puntuacions i les dates de la activitat |R4.3, R4.7, R5
+|UC15 | Veure estadistiques d'activitats | Veure quants cops s'ha fet la activitat, les puntuacions tretes en ella, les dates de quan es va fer |R4.3, R5
+|UC16 | Gestionar grup | Gestió d'un grup (afeguir, borrar grups)  |R5, R6
+|UC17 | Afegir alumne al grup | Afegir alumnes a un grup indicat |R5, R5.1, R5.2
+|UC18 | Eliminar alumne grup | Eliminar alumnes d'un grup |R5, R5.1, R5.2
+|UC19 | Cercar dades | Busca dades en funcio dels parametres afegits en el criteri de cerca | R5, R2
+|UC20 | Tancar sessio d'usuari | El usuari surt de la seva sessió |R5
+|UC21 | Modificar activitat | Modifica l'activitat seleccionada previament per l'usuari afeguint o canviant alguna pregunta |R5, R5.2, R4,
+|UC22 | Tancar activitat | Tanca l'activitat que estava activa |R5, R5.2, R4.1
+|UC23 | Veure activitat | Mostra per pantalla els exercicis de l'activitat |R5, R4, 
+|UC24 | Veure preview | Mostra per pantalla un resum de l'activitat junt a la quantiat de preguntes que hi han | R5, R4
+|UC25 | Modificar evaluació | Permet modificar una evaluació feta previament |R5, R4.7
+|UC26 | Evaluar activitat | La activitat previament feta es evaluada per el sistema |R5, R4.7
+|UC27 | Veure respostes | Mostra les respostes d'una o varies activitats |R5, R4.7, R3.1, R3.2
+|======
+

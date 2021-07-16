@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPrim - Gestion Grupos</title>
+
+    <link rel="stylesheet" href="?type=css&page=style-general">
+    <link rel="stylesheet" href="?type=css&page=style-gestionGrupos">
+    <link rel="stylesheet" href="?type=css&page=style-gestionActividades">
+    <link rel="stylesheet" href="?type=css&page=style-fonts">
+    <link rel="stylesheet" href="?type=css&page=style-shortcuts">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+
+</head>
+
+<body class="flex-column fW fH">
+    <div id="goBack"></div>
+    <div class="logOut">
+        <form method="POST" action="/logOut">
+            <button id="logOut" type="submit" class="flex-row space-between button">
+                <div class="flex-column center fW has-text" data-text="logOut">CERRAR SESSIÓN</div>
+                <div class="flex-column center"><i class="fas fa-sign-out-alt"></i></div>
+            </button>
+        </form>
+    </div>
+    <div id="popUp"> 
+        <div class="flex-column center flex-start">
+            <div class="mark fW flex-row flex-end">
+                <i id="closePopUp" class="fas fa-window-close">
+                    <div></div>
+                </i>
+            </div>
+            <div id="popUpContent" class="flex-column center space-between">
+            </div>
+        </div>
+    </div>
+
+    <section id="body" class="flex-row center flex-start fH fW">
+        <div class="flex-column center flex-start fH">
+            <div class="flex-row center fW">
+                <input id="search" class="buscador has-placeholder" data-placeholder="general-buscar" type="text" name="searchGrup">
+                <div class="flex-column center"><i class="fas fa-search t-m"></i></div>
+            </div>
+            
+
+            <div class="flex-row flex-start crud-menu">
+                <div id="addItem" class="flex-column center has-text">
+                    <span class="has-text t-yusei t-m" data-text="gestionGrupo-anadir" data-target="#agregar"></span>
+                </div>
+                <div id="removeItem" class="flex-column center" data-toggle="modal" data-target="#borrarModal">
+                    <span class="has-text t-yusei t-m" data-text="gestionGrupo-borrar" data-target="#"></span>
+                </div>
+                <div id="modifyItem" class="flex-column center" data-toggle="modal" data-target="#importModal">
+                    <span class="has-text t-yusei t-m" data-text="gestionGrupo-update" data-target="#"></span>
+                </div>
+
+            </div>
+
+            <div class="list-items center" id="menu1"></div>
+
+        </div>
+        <div class="flex-column center flex-start page">
+
+            <div id="menu" class="flex-row center flex-start m-l1 fW">
+                <div id="menuItem1" class="flex-row center  mark-page">
+                    <div class="flex-row center">
+                        <span class="t-yusei f-bold t-m t-center has-text" data-text="homeProfesor-grupos"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pageBody" class="flex-row center fH fW">
+                <div id="pageBody1" class="flex-row center space-around fH fW pages">
+                    <!-- 2 -->
+        
+                    <div class="flex-column center flex-start fH m-t1">
+                        <!-- 1 -->
+                        <span class="head-row  t-yusei t-b t-bold has-text" data-text="gestionGrupo-spanTodosAlumnos"></span>
+                        <input id="searchStudent" class="buscador has-placeholder" data-placeholder="gestionGrupo-buscador" type="text" name="searchGrup" placeholder="">
+                        <div class="listMenu" id="menu2">
+                        </div>
+                    </div>
+        
+                    <div class="flex-column center ">
+                        <!-- 2 -->
+                        <button class="i-s icon arrow-left" id="left"></button>
+                        <br>
+                        <button class="i-s icon arrow-right" id="right"></button>
+                    </div>
+        
+                    <div class="flex-column center flex-start fH m-t1">
+                        <!-- 3 -->
+                        <span class="head-row  t-yusei t-b t-bold has-text" data-text="gestionGrupo-spanAlumnoGrupo"></span>
+                        <input id="searchGroup"class="buscador has-placeholder" data-placeholder="gestionGrupo-buscador"" type="text" name="searchGrup" placeholder="buscador">
+                        <div class="listMenu" id="menu3"></div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="?type=js&page=general"></script>
+    <script src="?type=js&page=client_connector"></script>
+    <script src="?type=js&page=textPopulator"></script>
+    <script src="?type=js&page=gestionGrupos"></script>
+</body>
+<script src="https://kit.fontawesome.com/0a9ac31294.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+
+</html>

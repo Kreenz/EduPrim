@@ -1,0 +1,109 @@
+#body{
+    position: fixed;
+}
+
+#body > div{
+    margin-top: 100px;
+}
+
+#body > div:nth-child(1){
+    padding: 5px;
+    margin-right: 100px;
+}
+
+#body > div:nth-child(2){
+    width: 800px;
+    height: 700px;
+    background-color: #eeeeee;
+    border: 2px solid #565656;
+}
+
+#menu-preview{
+    width: 800px;
+    height: 40px;
+    background-color: #565656;
+}
+
+#bodyActivity{
+    width: 800px;
+    height: 560px;
+}
+
+#bodyActivity > div:nth-child(1){
+    width: 780px;
+    height: 50px;
+}
+
+#studentResponse {
+    width: 800px;
+    height: 490px;
+}
+
+#teacherAnswer{
+    width: 800px;
+    height: 100px;
+    background-color: #666666;
+}
+
+#teacherAnswer > div > div:nth-child(1):hover{
+    color:#66ff99;
+    text-shadow: 2px 2px 20px #66ff99;
+}
+
+#teacherAnswer > div > div:nth-child(2):hover{
+    color: #dc3545;
+    text-shadow: 2px 2px 20px #dc3545;
+}
+
+#teacherAnswer > button{
+    background-color: #f8bf16;
+}
+
+.list-entregas > div:nth-child(1){
+    width: 100%;
+    height: 200px;
+}
+
+#correcto{
+    color: #66ff99;
+}
+
+
+#incorrecto{
+    color: #fc2323;
+}
+
+.item-preview{
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.item-preview > div:nth-child(1) > span{
+    font-size: 10px;
+}
+
+.item-preview > div:nth-child(2){
+    width: 20px;
+    height: 19px;
+}
+
+.item-p-c {
+    background-color: #66ff99;
+}
+
+.item-p-i {
+    background-color: #dc3545;
+}
+
+.item-p-r {
+    background-color: #e8f2a1;
+}
+
+.item-p-e{
+    background-color: #dc3545;
+}

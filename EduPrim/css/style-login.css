@@ -1,0 +1,47 @@
+.flag {
+    width: auto;
+    height: 10vh;
+
+    margin: 1vh 1vw;
+
+    cursor: pointer;
+}
+
+#flag-box > p {
+    font-size: 5vh;
+
+    font-family: "Caroni";
+}
+
+#passInput {
+    background-color: white;
+    height: 8vh;
+    width: 21.3vw;
+    border: 1px solid #666;
+    border-radius: 10px;
+}
+
+#passInput > input {
+    border: none;
+    width: 17vw;
+    height:5vh;
+    max-width: 330px;
+}
+
+#passInput > i {
+    margin-left: 0.2vw;
+    cursor: pointer;
+}
+
+input{
+    border:1px solid #666;
+    border-radius: 10px;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'YuseiMagic';
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'YuseiMagic';
+}

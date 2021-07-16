@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>EduPrim - Actividad Alumno</title>
+
+    <link rel='stylesheet' href='?type=css&page=style-shortcuts'>
+    <link rel='stylesheet' href='?type=css&page=style-actividadAlumno'>
+    <link rel='stylesheet' href='?type=css&page=style-fonts'>
+    <link rel="icon" type="image/png" href="?type=res&file=EduPrim.ico&dir=imgs/"/>
+
+    <script src='?type=js&page=client_connector'></script>
+    <script src='?type=js&page=textPopulator'></script>
+    <script src="?type=js&page=kinetic-v5.1.0"></script>
+    
+    <script src='?type=js&page=gestorActividadAlumno'></script>
+    <script src='?type=js&page=actividadAlumno'></script>
+    
+    <script src='?type=js&page=actividadRespuestaArrastrarVacio'></script>
+    <script src='?type=js&page=actividadRespuestaCorta'></script>
+    <script src='?type=js&page=actividadRespuestaEscoger'></script>
+    <script src='?type=js&page=actividadRespuestaMultiopcion'></script>
+    <script src='?type=js&page=actividadRespuestaRelacionar'></script>
+    <script src='?type=js&page=actividadRespuestaOperacionesMatematicas'></script>
+    <script src='?type=js&page=actividadRespuestaOrdenacion'></script>
+    <script src='?type=js&page=actividadRespuestaMapaConceptual'></script>
+</head>
+
+<body>
+
+    <div id='nav'>
+        <div id='actividad'>Cargando...</div>
+        <div id='tiempo'>--:--</div>
+    </div>
+
+
+    <div id='vista'>
+        Cargando...
+        <!-- Lo de dentro de vista es lo unico que cambiara segun el tipo de respuesta -->
+    </div>
+
+    <div id='nav-border'>
+        <div id='nav-btn'>
+            <div id='previous'></div>
+            <div id="end" class="has-text" data-text="actividadAlumno-terminar"></div>
+            <div id='next'></div>
+        </div>
+    </div>
+
+    <div id="bloq-window"></div>
+
+    <div id="modal">
+        <div id="m-notificacion">
+            <div id="m-text" class="has-text" data-text="actividadAlumno-modal"></div>
+            <div id="m-btns">
+                <div id="m-aceptar" class="has-text" data-text="actividadAlumno-aceptar"></div>
+                <div id="m-cancelar" class="has-text" data-text="actividadAlumno-cancelar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

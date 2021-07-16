@@ -1,0 +1,78 @@
+.time-activity{
+    width: 150px;
+    height: 46px;
+    margin-top: 10px;
+    background-color: #eeeeee;
+    border: 2px solid #565656;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.time-activity > span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#body > div:nth-child(2){
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+#body > div:nth-child(2) > div{
+    margin-left: 100px;
+    background-color: #565656;
+    min-width: 350px;
+    max-width: 1200px;
+    height: 75px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#body > div:nth-child(2) > div > textarea{
+    min-width: 350px;
+    max-width: 1200px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-family: 'Frederick';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#listActivities > div{
+    margin-top: 50px;
+    margin-left: 105px;
+    min-width: 450px;
+    min-height: 80px;
+    background-color: gray;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+#listActivities > div > textarea{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    font-size: 15px;
+}
+
+#listActivities > div > button{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#listActivities > div > span{
+    font-size: 60px;
+    font-family: 'Frederick';
+    font-weight: bold;
+}
+
+
+
+/* esta bien de links */

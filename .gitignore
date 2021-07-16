@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+mysql-config.json
+/UserLoginTesting/nbproject/private/
+.vagrant/
+testing.js
+testing.html
+testing/
+actividad/

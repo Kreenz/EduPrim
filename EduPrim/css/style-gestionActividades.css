@@ -1,0 +1,580 @@
+/* esta bien de links */
+
+.head-row{
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.arrow-left, .arrow-right{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+#body > div:nth-child(1){
+    width: 450px;
+    margin-top: 20vh;
+    margin-right: 7.2vw;
+}
+
+#body > div:nth-child(1) > div:nth-child(1) > div {
+    height: 3.6vw;
+    width: 4.5vw;
+    background-color: #565656;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#body > div:nth-child(1) > div:nth-child(1){
+    margin-left: 3.5vw;
+}
+
+#body > div:nth-child(1) > div:nth-child(2){
+    margin-left: 2.5vw;
+}
+
+.buscador{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border:1px solid white;
+    border-right: none;
+}
+
+#body{
+    background-image: url('?type=res&file=background-profe.jpg&dir=imgs/');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bordePulsado{
+border-color: tomato;
+}
+
+.page{
+    width: 55vw;
+    height: 35vw;
+    max-height: 85vh;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#menu > .item-user{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #71c6d9;
+}
+
+#menu > div:nth-child(1){
+    margin-left: -6px;
+}
+
+#pageBody {
+    border: 2px solid white;
+    background-image: url('?type=res&file=background-body.png&dir=imgs/');
+    background-size: 100% 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#pageBody > div:nth-child(1) > input {
+    width: 250px;
+    height: 30px;
+}
+
+#pageBody > div:nth-child(3) > input {
+    width: 250px;
+    height: 30px;
+}
+
+.mark-page{
+    background-color: #33ffff !important;
+}
+
+.act-codigo {
+    margin-top: 2vh;
+    
+    font-size: 5vh;
+}
+
+/*
+
+CORRECCIONES
+
+
+*/
+
+#pageBody2{
+    width: 100%;
+    height: 100%;
+}
+
+#menu-preview{
+    width: 100%;
+    height: 5.6vh;
+    background-color: #666666;
+    overflow-y: auto;
+    max-width: 48vw;
+}
+
+#menu-preview > .item-preview:nth-child(1){
+    margin-left: 5px;
+}
+
+#bodyActivity > div:nth-child(1){
+    width:  97%;
+    height: 50px;
+}
+
+#studentResponse {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    overflow-y: auto;
+    max-height: 40vh;
+}
+
+#teacherAnswer{
+    width: 100%;
+    height: 10%;
+    background-color: #666666;
+}
+
+#teacherAnswer > div:nth-child(1){
+    background-color: #71c6d9;
+    height: 4vh;
+    width: 25vw;
+    border-radius: 5px;
+}
+
+#teacherAnswer > div > div:nth-child(1):hover{
+    color:#66ff99;
+    text-shadow: 2px 2px 20px #66ff99;
+}
+
+#teacherAnswer > div > div:nth-child(2):hover{
+    color: #dc3545;
+    text-shadow: 2px 2px 20px #dc3545;
+}
+
+#teacherAnswer > button{
+    background-color: #f8bf16;
+    width: 14vw;
+    height: 4vh;
+    margin-top: 0px;
+}
+
+.list-entregas > div:nth-child(1){
+    background-color: #666666;
+    height: 4.7vh;
+}
+
+.list-items2 > .item-user{
+    border: none;
+    border-top: 1px solid #666666;
+    margin-bottom: 0px;
+    width: auto;
+    height: 3vw;
+}
+
+.list-items2 > .item-user:last-child{
+    border-bottom: 1px solid #666666;
+}
+
+.list-items2 {
+    background-color: #666666;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.listMenu{
+    overflow-y: auto;
+    max-height: 40vh;
+}
+
+#status{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+#correcto{
+    color: #66ff99;
+}
+
+#incorrecto{
+    color: #fc2323;
+}
+
+.correcto{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #66ff99;
+}
+
+.incorrecto{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #fc2323;
+}
+
+.modificado{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #33ffff;
+}
+
+
+
+.item-preview{
+    width: 1.4vw;
+    height: 3.4vh;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.item-preview > div:nth-child(1) > span{
+    font-size: 1vw !important;
+}
+
+.item-preview > div:nth-child(2){
+    width: 1.4vw;
+    height: 1.7vh;
+}
+
+.item-p-c {
+    background-color: #66ff99;
+}
+
+.item-p-i {
+    background-color: #dc3545;
+}
+
+.item-p-r {
+    background-color: #e8f2a1;
+}
+
+.item-p-e{
+    background-color: #dc3545;
+}
+
+.m-b1-2{
+    margin-bottom: 7px;
+}
+
+.m-t1-2{
+    margin-top: 8px;
+}
+
+.mark-preview{
+    border: 2px solid #002e63;
+    border-radius: 2px;
+}
+
+.mark-modPreview{
+    border: 2px solid #002e63;
+    border-radius: 2px;
+}
+
+.mark-modPreview33 {
+    border: 2px solid #002e63;
+    border-radius: 2px;
+}
+
+
+.item-preview:hover{
+    border:2px solid #f8bf16;
+    border-radius: 2px;
+}
+
+.mark-item2{
+    background-color: #33ffff;
+}
+
+.mark-item-2{
+    background-color: #33ffff;
+}
+
+.mark-item-3{
+    background-color: #33ffff;
+}
+
+.mark-itemresp{
+    background-color: #33ff33;
+}
+
+.mark-item33{
+    background-color: #33ffff;
+}
+
+.crud-menu{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.crud-menu > div{
+    width: 33.5%;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.crud-menu > div:nth-child(1){
+    margin-left: 0px;
+}
+
+#menu1 > .item-user > div > span{
+    font-family: 'YuseiMagic';
+    font-size: 1.7vw;
+    font-weight: normal;
+}
+
+
+/* PAGE BODY 3 */
+
+#pageBody3 > div:nth-child(1) > div:nth-child(2) {
+    background-color: white;
+    border:2px solid #565656;
+    width: 5vw;
+    height: 4.4vh;
+    margin-left: 0.5vw;
+}
+
+#pageBody3 > div:nth-child(1) > div:nth-child(3){
+    height: 4.4vh;
+    background-color: white;
+    border: 2px solid #666;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    margin-left: 0.2vw;
+}
+
+#listActivities > div{
+    margin: 1vh;
+    border-left: 0.1em solid #666666;
+    border-right: 0.1em solid #666666;
+    overflow-y: auto;
+    max-height: 30vh;
+}
+
+#listActivities.mapaConceptualRes{
+    overflow-y: auto;
+    max-height: 30vh;
+}
+
+#listActivities.mapaConceptualRes > div{
+    overflow-y: unset;
+    max-height: none;
+}
+
+select{
+    width: 18vw;
+    height: 4.85vh;
+    margin-top: 0px;
+    font-size: 3vh;
+}
+
+.buttonMini{
+    width: 2.5vw;
+    height: 4vh;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.buttonDelete{
+    background-color: #dc3545;
+}
+
+.buttonAdd{
+    background-color: #66ff99;
+}
+
+.header-start{
+    font-size: 1.4vw;
+    margin-left: 0.3vw;
+    font-family: 'YuseiMagic';
+}
+
+.enunciado {
+    margin: 1vh;
+}
+
+.enunciado > .enunciadoArrastrar{
+    background-color: #666666;
+    min-width: 15vw;
+    max-width: 53vw;
+    height: auto;
+    min-height: 9vw;
+    border-radius: 2px;
+    padding: 0.5vw;
+}
+
+.enunciado > div {
+    background-color: #666666;
+    min-width: 15vw;
+    height: 9vh;
+    border-radius: 2px;
+    padding: 0.5vw;
+}
+
+.enunciado > p:nth-child(1){
+    background-color: #666666;
+    min-width: 15vw;
+    height: 9vh;
+    border-radius: 2px;
+}
+
+.enunciado > div > textarea {
+    background-color: transparent;
+    border: none;
+    width: 98%;
+    height: 98%;
+    max-width: 52vw;
+    min-width: 30vw;
+    resize: horizontal;
+    font-family: 'YuseiMagic';
+    font-size: 1.5vw;
+}
+
+#addNewPage{
+    font-size: 1.5vw;
+    border-radius: 3px;
+    background-color: #66ff99;
+    border: none;
+}
+
+.multiopcion{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 1px solid #666666;
+    padding: 2px;
+    /*background-color: #71c6d9;*/
+}
+
+.arrastrar{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.results{
+    color: #dc3545;
+}
+
+#saveArrastrarText{
+    /* width: 150px;
+    height: 35px; */
+    margin-left: 10px;
+    outline: none;
+}
+
+.mapaConceptual{
+    width: 35vw;
+    height: 35vh;
+    background-color: #666666;
+}
+
+.mapaConceptualRes{
+    width: 30%;
+}
+
+input[type=file]{
+    font-size: 15px;
+}
+
+.maximoarea{
+    max-width: 20vw;
+}
+
+.maximoheigth{
+    max-height: 5vw;
+}
+
+#imagen{
+    width: 30px;
+    height: 30px;
+}
+
+.fotoejer{
+    width: 25vw;
+    height: auto;
+}
+
+#modActivityPreview{
+    max-width: 50vw;
+    overflow-y: auto;
+}
+
+#fileDropZone {
+    background-color: #b7b7ce;
+    
+    width: 20vw;
+    height: 15vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#fileDropZone > p {
+    padding: 2vh 2vw;
+    font-size: 2vh;
+}
+
+.dragOver {
+    background-color: #9797cc !important;
+}
+
+div.multiopcion > textarea{
+    max-width: 10vw;
+    min-width: 5vw;
+    max-height: 2.5vw;
+    min-height: 2vw;
+    font-size: 1vw;
+}
+
+#timerText{
+    font-size: 1vw;
+}
+
+.t-s.t-yusei{
+    font-size: 1.5vw !important;
+}
+
+.t-yusei.f-bold.t-m.m-r1.has-text{
+    font-size: 1vw;
+}
+
+#teacherAnswer .m-l5{
+    margin-left: 1.5vw;
+}
+
+#popUpText > input{
+    height: 8vh;
+    width: 22vw;
+}
+
+p{
+    font-family: 'YuseiMagic';
+}
+div{
+    font-family: 'YuseiMagic';
+}
