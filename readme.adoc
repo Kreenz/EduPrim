@@ -1,4 +1,4 @@
-#Proyecto final de CFGS donde hicimos una aplicación para que niños pequeños pudieran aprender cosas básicas desde casa, como sumar, restar, conectar puntos, rellenar espacios en blanco, etc.
+# Proyecto final de CFGS donde hicimos una aplicación para que niños pequeños pudieran aprender cosas básicas desde casa, como sumar, restar, conectar puntos, rellenar espacios en blanco, etc.
 
 Hecho por:
 Diego Muñoz
