@@ -1,8 +1,10 @@
 # Proyecto de inter-modulo de CFGS.
 
-En este proyecto hicimos una aplicación para que niños pequeños pudieran aprender cosas básicas desde casa, como sumar, restar, conectar puntos, rellenar espacios en blanco, etc
+En este proyecto hicimos una aplicación para que niños pequeños pudieran aprender cosas básicas desde casa, como sumar, restar, conectar puntos, rellenar espacios en blanco, etc.
 
-Hecho por:
+Creado con NodeJS
+
+## Hecho por:
 Diego Muñoz
 Pablo Ceballos
 Oriol Fornós
