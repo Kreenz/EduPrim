@@ -6,9 +6,6 @@ Creado con NodeJS
 
 ## Hecho por:
 - Diego Muñoz
-
 - Pablo Ceballos
-
 - Oriol Fornós
-
 - Marc Ortiz
