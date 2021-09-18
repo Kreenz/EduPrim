@@ -5,10 +5,10 @@ En este proyecto hicimos una aplicación cliente-servidor para que niños peque�
 Creado con NodeJS
 
 ## Hecho por:
-Diego Muñoz
+- Diego Muñoz
 
-Pablo Ceballos
+- Pablo Ceballos
 
-Oriol Fornós
+- Oriol Fornós
 
-Marc Ortiz
+- Marc Ortiz
